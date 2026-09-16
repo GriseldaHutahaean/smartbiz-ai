@@ -1,149 +1,175 @@
-# Library AI: Sistem Cerdas untuk Pencarian dan Rekomendasi Buku pada Perpustakaan IT Del
+# SmartBiz AI
+
+## Sistem Pendukung Keputusan Cerdas untuk Optimasi Keuangan dan Persediaan Usaha
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/managed%20with-uv-6C5CE7)](https://docs.astral.sh/uv/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-in%20development-yellow)](#roadmap-dan-progres)
+[![Status](https://img.shields.io/badge/status-in%20development-yellow)](#roadmap)
 
-Sistem cerdas untuk membantu pencarian koleksi, rekomendasi buku, dukungan pengadaan koleksi, dan optimasi rute pengambilan buku pada Perpustakaan Institut Teknologi Del (IT Del). Repository ini mendokumentasikan seluruh pengerjaan proyek selama satu semester, mulai dari perumusan masalah hingga evaluasi Proyek Akhir/UAS.
-
-> **Dokumentasi hidup:** README ini akan diperbarui pada setiap milestone. Status, fitur, struktur modul, hasil eksperimen, dan tautan artefak akan ditambahkan seiring proyek berjalan.
+SmartBiz AI adalah sistem berbasis Artificial Intelligence yang membantu pemilik usaha menganalisis kondisi keuangan, memperoleh rekomendasi harga jual produk, serta memantau dan memprediksi kebutuhan persediaan. Sistem ini dirancang sebagai proyek AI mahasiswa selama satu semester dan masih dikembangkan secara bertahap.
 
 ## Daftar Isi
 
-- [Latar Belakang dan Tujuan](#latar-belakang-dan-tujuan)
-- [Spesifikasi PEAS](#spesifikasi-peas)
-- [Roadmap dan Progres](#roadmap-dan-progres)
-- [Fitur](#fitur)
-- [Arsitektur Sistem](#arsitektur-sistem)
-- [Struktur Direktori](#struktur-direktori)
-- [Instalasi dan Setup](#instalasi-dan-setup)
-- [Menjalankan Program](#menjalankan-program)
-- [Contoh Input dan Output](#contoh-input-dan-output)
-- [Repository dan Version Control](#repository-dan-version-control)
-- [Anggota Tim](#anggota-tim)
-- [Lisensi](#lisensi)
-- [Acknowledgment](#acknowledgment)
+- [Deskripsi Project](#deskripsi-project)
+- [Tujuan Project](#tujuan-project)
+- [Problem Statement](#problem-statement)
+- [AI Approach / Intelligent System](#ai-approach--intelligent-system)
+- [PEAS](#peas)
+- [Fitur Utama](#fitur-utama)
+- [System Workflow](#system-workflow)
+- [System Architecture](#system-architecture)
+- [Roadmap](#roadmap)
+- [Struktur Project](#struktur-project)
+- [Instalasi](#instalasi)
+- [How to Run](#how-to-run)
+- [Contoh Use Case](#contoh-use-case)
+- [Future Development](#future-development)
+- [Team](#team)
+- [License](#license)
 
-## Latar Belakang dan Tujuan
+## Deskripsi Project
 
-Proyek ini dikerjakan secara berkelompok oleh 3-4 mahasiswa Program Sarjana Sistem Informasi sebagai proyek terpadu mata kuliah **10S3001 - Kecerdasan Buatan**, Semester Gasal 2026/2027. Sistem dirancang untuk menjawab beberapa tantangan operasional perpustakaan:
+Pemilik usaha sering memiliki banyak data produk, bahan baku, biaya produksi, penjualan, pemasukan, pengeluaran, stok, dan transaksi, tetapi tidak selalu mudah mengubah data tersebut menjadi keputusan yang tepat. Kondisi ini dapat menyulitkan pemilik usaha ketika mengevaluasi laba, menentukan harga jual, atau memutuskan kapan harus melakukan restock.
 
-- pencarian koleksi yang masih bergantung pada pencocokan keyword secara literal;
-- personalisasi rekomendasi buku yang masih terbatas;
-- proses pengadaan koleksi yang cenderung reaktif;
-- tingginya beban layanan referensi manual; dan
-- rute pengambilan koleksi fisik antar-rak atau lokasi yang belum optimal.
+SmartBiz AI mengolah data keuangan dan persediaan untuk menampilkan kondisi usaha secara lebih terstruktur. Sistem memberikan analisis seperti omzet, pemasukan dan pengeluaran, laba/rugi, margin keuntungan, performa produk, serta insight kondisi keuangan. Selain itu, sistem menyediakan rekomendasi harga jual, prediksi kebutuhan persediaan berdasarkan pola penjualan historis jika data tersedia, dan peringatan ketika stok berada dalam kondisi kritis.
 
-### Tujuan
+Project ini bukan sistem akuntansi murni dan bukan hanya dashboard CRUD. Unsur kecerdasannya terletak pada analisis data, prediksi permintaan persediaan, serta rekomendasi keputusan yang mendukung pemilik usaha.
 
-1. Membangun fondasi pencarian koleksi yang lebih cerdas dan relevan.
-2. Menghasilkan rekomendasi buku yang lebih personal berdasarkan data pengguna dan koleksi.
-3. Mendukung pengambilan keputusan pengadaan koleksi berbasis data.
-4. Mengurangi beban layanan referensi melalui otomatisasi bantuan pencarian.
-5. Mengoptimalkan rute pengambilan buku secara fisik menggunakan algoritma pencarian ruang keadaan.
+## Tujuan Project
 
-### Konteks Penilaian
+- Membantu pemilik usaha memahami kondisi keuangan berdasarkan data transaksi.
+- Memberikan rekomendasi harga jual dengan mempertimbangkan biaya dan target margin.
+- Memantau jumlah stok dan kondisi persediaan secara terstruktur.
+- Memprediksi kebutuhan stok berdasarkan pola penjualan historis jika data tersedia.
+- Memberikan peringatan dan rekomendasi restock ketika persediaan mendekati kondisi kritis.
+- Mendukung pengambilan keputusan usaha berbasis data dan bukan hanya intuisi.
 
-Lima Milestone Terpadu menyumbang **36% dari Nilai Komponen Proyek** sebagai fondasi menuju evaluasi Proyek Akhir/UAS. Evaluasi Proyek Akhir/UAS menyumbang **64%** melalui Showcase (32%) dan Portofolio/Laporan (32%). Secara keseluruhan, komponen Proyek berkontribusi **30% terhadap nilai akhir perkuliahan**.
+## Problem Statement
 
-## Spesifikasi PEAS
+Permasalahan yang ingin dibantu oleh SmartBiz AI meliputi:
 
-| Komponen | Spesifikasi sistem |
+- Pemilik usaha kesulitan memahami kondisi keuangan dari banyak data transaksi.
+- Penentuan harga jual dapat tidak konsisten karena belum mempertimbangkan seluruh biaya dan target margin.
+- Risiko kehabisan stok dapat mengganggu penjualan.
+- Kelebihan stok dapat meningkatkan biaya penyimpanan dan risiko bahan atau produk tidak terpakai.
+- Keputusan restock sering dilakukan tanpa mempertimbangkan pola penjualan dan sisa stok secara memadai.
+
+## AI Approach / Intelligent System
+
+SmartBiz AI memisahkan perhitungan berbasis aturan dari analisis dan prediksi yang memerlukan model AI. Metode AI spesifik dapat ditentukan setelah data dipahami dan dievaluasi; README ini tidak menganggap metode tertentu sebagai fitur final.
+
+### Financial Analysis
+
+Data pemasukan, pengeluaran, biaya produksi, harga jual, dan transaksi diolah untuk menghitung omzet, laba/rugi, margin keuntungan, dan performa produk. Perhitungan metrik dasar ini menggunakan formula dan rule-based logic. Insight kondisi keuangan dapat dikembangkan dengan analisis berbasis data.
+
+### Price Recommendation
+
+Sistem menghitung dasar rekomendasi dari biaya bahan baku, biaya produksi, HPP, dan target margin. Data penjualan historis dapat digunakan sebagai konteks tambahan. Hasilnya adalah **rekomendasi harga jual**, bukan penetapan harga secara mutlak oleh AI. Perhitungan awal dapat menggunakan rule-based logic, sedangkan model AI atau analisis historis dapat ditambahkan dan dievaluasi sesuai ketersediaan data.
+
+### Inventory Monitoring
+
+Sistem mencatat jumlah stok saat ini, batas minimum stok, dan histori perubahan stok. Status stok, termasuk kondisi rendah atau kritis, ditentukan menggunakan rule-based logic berdasarkan batas yang ditetapkan.
+
+### Inventory Demand Prediction
+
+Jika data penjualan historis tersedia, model AI atau metode prediksi yang sesuai dapat mempelajari pola permintaan untuk memperkirakan kebutuhan persediaan. Sebagai ilustrasi, stok 20 unit dengan rata-rata penjualan 5 unit per hari dapat menghasilkan perkiraan stok habis sekitar 4 hari lagi. Hasil prediksi bergantung pada kualitas, jumlah, dan pola data yang tersedia.
+
+### Restock Recommendation
+
+Sistem dapat memicu peringatan ketika stok berada di bawah batas minimum atau diperkirakan habis dalam waktu dekat. Rekomendasi restock dapat menggabungkan rule-based logic dengan hasil prediksi permintaan. Rekomendasi ini menjadi dukungan keputusan dan tetap perlu ditinjau oleh pemilik usaha.
+
+## PEAS
+
+| Komponen | Spesifikasi SmartBiz AI |
 | --- | --- |
-| **Performance Measure** | Relevansi hasil pencarian dan rekomendasi, waktu respons, optimalitas biaya rute, tingkat keberhasilan pencarian koleksi, kepuasan pengguna, serta kemudahan pemeliharaan sistem. |
-| **Environment** | Perpustakaan IT Del, katalog dan metadata buku, data peminjaman atau interaksi pengguna, tata letak rak/lokasi, aturan operasional perpustakaan, serta kondisi ketersediaan koleksi. |
-| **Actuators** | Menampilkan hasil pencarian, memberikan rekomendasi, menyarankan prioritas pengadaan, menghasilkan rute pengambilan buku, dan menyediakan informasi pendukung bagi pengguna atau pustakawan. |
-| **Sensors** | Query pengguna, metadata buku, status ketersediaan, histori peminjaman/interaksi, lokasi rak, bobot atau jarak antar-lokasi, serta umpan balik pengguna. |
+| **Performance Measure** | Ketepatan perhitungan metrik keuangan, relevansi rekomendasi harga dan restock, kualitas prediksi permintaan, ketepatan peringatan stok, waktu respons, dan kemudahan penggunaan. |
+| **Environment** | Data operasional usaha, produk, bahan baku, biaya produksi, transaksi, penjualan, pemasukan, pengeluaran, dan persediaan. |
+| **Actuators** | Menampilkan analisis keuangan, memberikan rekomendasi harga jual, menampilkan status stok, menghasilkan prediksi kebutuhan, serta mengirimkan peringatan dan rekomendasi restock. |
+| **Sensors** | Input data produk dan bahan baku, biaya, harga jual, jumlah penjualan, transaksi, pemasukan, pengeluaran, stok saat ini, batas minimum stok, dan histori perubahan stok. |
 
-## Roadmap dan Progres
+## Fitur Utama
 
-Roadmap berikut menjadi catatan kerja yang diperbarui sepanjang semester. Detail topik M2-M5 dapat disesuaikan setelah pembagian tugas dan arahan perkuliahan berikutnya.
+- **Financial Dashboard:** ringkasan omzet, pemasukan, pengeluaran, laba/rugi, margin, dan insight keuangan.
+- **Product & Raw Material Data:** pengelolaan data produk, bahan baku, biaya produksi, dan harga jual.
+- **Profit/Loss Analysis:** analisis laba/rugi dan performa produk berdasarkan data yang dimasukkan.
+- **Price Recommendation:** rekomendasi harga jual berdasarkan HPP, biaya, target margin, dan bila tersedia data penjualan historis.
+- **Inventory Monitoring:** pemantauan stok saat ini, batas minimum, dan histori perubahan stok.
+- **Stock Alert:** peringatan ketika stok rendah atau berada dalam kondisi kritis.
+- **Demand/Stock Prediction:** prediksi kebutuhan persediaan berdasarkan pola penjualan historis jika data mencukupi.
+- **Restock Recommendation:** rekomendasi tindakan restock dengan mempertimbangkan kondisi stok dan hasil prediksi.
 
-| Milestone | Fokus | Status |
-| --- | --- | --- |
-| **M1** | Business Problem Framing, spesifikasi PEAS, dan baseline pencarian ruang keadaan menggunakan Uniform Cost Search (UCS) / A* Search dengan `heapq` untuk optimasi rute pengambilan koleksi. | **Selesai** |
-| **M2** | *Placeholder:* akan ditentukan dan dilengkapi berdasarkan fokus milestone. | **Akan diperbarui** |
-| **M3** | *Placeholder:* akan ditentukan dan dilengkapi berdasarkan fokus milestone. | **Akan diperbarui** |
-| **M4** | *Placeholder:* akan ditentukan dan dilengkapi berdasarkan fokus milestone. | **Akan diperbarui** |
-| **M5** | *Placeholder:* akan ditentukan dan dilengkapi berdasarkan fokus milestone. | **Akan diperbarui** |
-| **Proyek Akhir / UAS** | Integrasi sistem, evaluasi, Showcase, serta Portofolio/Laporan. | **Akan diperbarui** |
+## System Workflow
 
-## Fitur
+```mermaid
+flowchart TD
+    A[Input Data Usaha] --> B[Data Processing]
+    B --> C[AI Analysis]
+    C --> D[Prediction & Recommendation]
+    D --> E[Dashboard / Alert]
+    E --> F[User Decision]
+```
 
-### Selesai pada M1
+## System Architecture
 
-- [x] Business Problem Framing untuk konteks Perpustakaan IT Del.
-- [x] Spesifikasi PEAS sistem cerdas.
-- [x] Baseline Uniform Cost Search (UCS) untuk pencarian rute.
-- [x] Baseline A* Search dengan heuristik biaya/jarak.
-- [x] Penggunaan `heapq` sebagai priority queue untuk efisiensi pencarian.
-- [x] Pemodelan lokasi rak dan koneksi antar-lokasi sebagai ruang keadaan.
-
-### Direncanakan untuk milestone berikutnya
-
-- [ ] Pencarian koleksi berbasis relevansi semantik.
-- [ ] Rekomendasi buku yang dipersonalisasi.
-- [ ] Analisis kebutuhan dan prioritas pengadaan koleksi.
-- [ ] Bantuan referensi otomatis.
-- [ ] Evaluasi kuantitatif, visualisasi, dan analisis error.
-- [ ] Antarmuka pengguna dan integrasi seluruh komponen.
-- [ ] Dokumentasi eksperimen, Showcase, dan Portofolio/Laporan.
-
-## Arsitektur Sistem
+Arsitektur sistem dirancang menggunakan komponen umum agar implementasinya dapat disesuaikan dengan hasil pengembangan dan evaluasi project.
 
 ```mermaid
 flowchart LR
-    U[Pengguna atau Pustakawan] --> Q[Query dan Preferensi]
-    Q --> S[Layanan Pencarian]
-    S --> C[(Katalog Buku)]
-    S --> R[Mesin Rekomendasi]
-    C --> R
-    R --> O[Hasil Pencarian dan Rekomendasi]
-    O --> U
-    O --> P[Perencana Rute Pengambilan]
-    P --> G[(Graf Rak dan Lokasi)]
-    G --> A[UCS / A* Search]
-    A --> T[Rute Optimal]
-    T --> U
-    O --> D[Analitik Pengadaan dan Evaluasi]
+    U[User Interface] --> B[Backend]
+    B --> DB[(Database)]
+    B --> A[AI / Prediction Module]
+    DB --> A
+    A --> B
+    B --> U
 ```
 
-## Struktur Direktori
+- **User Interface:** tempat pemilik usaha memasukkan data dan melihat analisis, prediksi, rekomendasi, serta alert.
+- **Backend:** menangani validasi input, proses bisnis, perhitungan metrik, dan komunikasi antarkomponen.
+- **Database:** menyimpan data produk, bahan baku, transaksi, keuangan, persediaan, dan histori.
+- **AI/Prediction Module:** menjalankan analisis data, metode prediksi yang sesuai, dan logika rekomendasi yang membutuhkan hasil analisis.
 
-Struktur berikut merupakan rancangan organisasi proyek Python yang akan dikembangkan dan disesuaikan pada milestone berikutnya.
+## Roadmap
+
+| Milestone | Fokus | Output |
+| --- | --- | --- |
+| **M1** | Problem Definition & Project Planning | Rumusan masalah, tujuan, ruang lingkup, PEAS, dan rancangan awal sistem. |
+| **M2** | Data Collection & Data Understanding | Sumber atau skema data, pemahaman atribut, definisi metrik, dan analisis awal kualitas data. |
+| **M3** | Data Processing & AI Model Development | Pra-pemrosesan data, baseline rule-based, eksplorasi model AI atau metode prediksi, serta evaluasi awal. |
+| **M4** | System Integration & Dashboard | Integrasi modul analisis, prediksi, rekomendasi, penyimpanan data, dan dashboard atau antarmuka. |
+| **M5** | Testing, Evaluation & Final Presentation | Pengujian sistem, evaluasi hasil, analisis keterbatasan, dokumentasi, dan presentasi final. |
+
+## Struktur Project
+
+Struktur berikut menggambarkan struktur Python/AI yang direncanakan. Pada kondisi repository saat ini, file yang tersedia adalah `README.md`, `LICENSE`, dan `pyproject.toml`; folder implementasi akan ditambahkan sesuai kebutuhan milestone.
 
 ```text
-library-ai-itdel/
+smartbiz-ai/
 ├── README.md
 ├── LICENSE
 ├── pyproject.toml
 ├── uv.lock
 ├── src/
-│   └── library_ai/
+│   └── smartbiz_ai/
 │       ├── __init__.py
-│       ├── search/
-│       │   ├── __init__.py
-│       │   └── pathfinding.py       # UCS dan A* Search
+│       ├── analysis/
 │       ├── recommendation/
-│       ├── retrieval/
-│       └── evaluation/
+│       ├── inventory/
+│       └── prediction/
 ├── data/
-│   ├── raw/                         # Data mentah, tidak diubah
-│   ├── processed/                   # Data hasil pra-pemrosesan
-│   └── README.md
-├── docs/                            # Spesifikasi, diagram, dan laporan teknis
-├── notebooks/                       # Eksplorasi dan eksperimen
-├── tests/                           # Unit test dan integration test
-└── scripts/                         # Utilitas pra-pemrosesan atau eksperimen
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+├── tests/
+└── docs/
 ```
 
-## Instalasi dan Setup
+## Instalasi
 
 ### Prasyarat
 
 - Python **3.11 atau lebih baru**.
-- [Astral `uv`](https://docs.astral.sh/uv/getting-started/installation/) terpasang dan tersedia pada `PATH`.
+- [Astral `uv`](https://docs.astral.sh/uv/getting-started/installation/) tersedia pada `PATH`.
 - Git untuk mengambil dan mengelola repository.
 
 ### Menyiapkan environment
@@ -165,78 +191,61 @@ Aktivasi environment secara opsional:
 source .venv/bin/activate
 ```
 
-Dependensi proyek didefinisikan pada `pyproject.toml`. Gunakan `uv add <nama-paket>` untuk menambahkan dependensi baru dan `uv lock` untuk memperbarui lockfile.
+Dependency project didefinisikan pada `pyproject.toml`. Saat ini dependency aplikasi belum ditambahkan. Gunakan `uv add <nama-paket>` hanya ketika dependency baru memang diperlukan oleh implementasi.
 
-## Menjalankan Program
+## How to Run
 
-Contoh berikut menggambarkan antarmuka modul pencarian M1 setelah modul tersedia pada struktur proyek:
+Implementasi aplikasi dan entry point belum tersedia pada repository saat ini, sehingga belum ada perintah untuk menjalankan dashboard atau modul AI. Setelah modul dibuat, perintah menjalankan program harus didokumentasikan di bagian ini sesuai entry point yang benar.
 
-```bash
-# Uniform Cost Search
-uv run python -m library_ai.search.pathfinding \
-  --algorithm ucs \
-  --start pintu-masuk \
-  --goal rak-ai
-
-# A* Search
-uv run python -m library_ai.search.pathfinding \
-  --algorithm astar \
-  --start pintu-masuk \
-  --goal rak-ai
-```
-
-Sesuaikan nama modul, argumen, dan format data dengan implementasi aktual yang ditambahkan pada repository. Perintah pengujian yang direkomendasikan:
+Untuk memeriksa bahwa environment Python project dapat digunakan, jalankan:
 
 ```bash
-uv run pytest
+uv run python --version
 ```
 
-## Contoh Input dan Output
+## Contoh Use Case
 
-Contoh konseptual input untuk pencarian rute:
+Misalnya sebuah usaha bakery memasukkan data berikut:
 
-```json
-{
-  "algorithm": "astar",
-  "start": "pintu-masuk",
-  "goal": "rak-ai",
-  "graph": {
-    "pintu-masuk": {"rak-pemrograman": 4},
-    "rak-pemrograman": {"rak-ai": 3},
-    "rak-ai": {}
-  }
-}
-```
+- bahan baku tepung, telur, gula, dan bahan lain;
+- biaya produksi setiap produk;
+- harga jual produk;
+- jumlah penjualan dan transaksi;
+- pemasukan dan pengeluaran;
+- stok produk atau bahan baku serta batas minimum stok.
 
-Contoh output:
+SmartBiz AI kemudian dapat:
 
-```text
-Algorithm : A*
-Path      : pintu-masuk -> rak-pemrograman -> rak-ai
-Cost      : 7
-Expanded  : 3 states
-```
+1. menghitung omzet, laba/rugi, dan margin produk;
+2. memberikan rekomendasi harga jual berdasarkan HPP, biaya produksi, dan target margin;
+3. menampilkan stok saat ini dan histori perubahan stok;
+4. memperkirakan waktu stok habis jika data penjualan historis mencukupi; dan
+5. menampilkan alert serta rekomendasi restock ketika stok rendah atau diperkirakan segera habis.
 
-Nilai di atas adalah ilustrasi untuk menjelaskan kontrak input/output; hasil aktual bergantung pada graf lokasi, bobot sisi, dan heuristik yang digunakan.
+## Future Development
 
-## Repository dan Version Control
+Pengembangan berikut masih dapat dipertimbangkan setelah kebutuhan, data, dan hasil evaluasi project lebih jelas:
 
-Repository ini menggunakan **MIT License**; ketentuan lengkapnya tersedia pada file [LICENSE](LICENSE). Manajemen environment dan dependensi menggunakan Astral `uv`: `pyproject.toml` mendefinisikan metadata proyek serta dependensi, sedangkan `uv.lock` mengunci resolusi dependensi agar setup dapat direproduksi. File `.gitignore` mengecualikan environment lokal, file rahasia, cache, dan artefak hasil generate tanpa mengabaikan dokumentasi atau konfigurasi proyek.
+- membandingkan beberapa metode prediksi yang sesuai dengan karakteristik data;
+- meningkatkan evaluasi akurasi prediksi dan relevansi rekomendasi;
+- menambahkan analisis sensitivitas terhadap biaya dan target margin;
+- memperbaiki visualisasi tren keuangan dan persediaan; dan
+- mengembangkan integrasi antarmuka serta notifikasi sesuai kebutuhan pengguna.
 
-Git digunakan untuk version control dan mencatat riwayat perubahan repository. Saat ini riwayat berisi commit awal `3735fa6 readme`.
+Daftar tersebut merupakan kemungkinan pengembangan, bukan klaim bahwa fitur sudah tersedia atau menjadi fitur final.
 
-## Anggota Tim
+## Team
 
-| Nama | NIM | Peran / Tanggung Jawab |
+| Nama | NIM | Role |
 | --- | --- | --- |
-| *Margareth Bungaran Sitompul* | *12S24006* | *Akan diisi* |
-| *Griselda Tabitha Nathania Hutahaean* | *12S24026* | *Akan diisi* |
-| *Josef Christian Marpaung* | *12S24036* | *Akan diisi* |
+| Nama | NIM | Role |
+| Nama | NIM | Role |
+| Nama | NIM | Role |
 
-## Lisensi
+## License
 
-Proyek ini dirilis di bawah **MIT License**. Ketentuan lengkap dapat dibaca pada file [LICENSE](LICENSE).
+Project ini menggunakan **MIT License**. Ketentuan lengkap tersedia pada file [LICENSE](LICENSE).
 
 ## Acknowledgment
 
-Proyek ini disusun untuk memenuhi rangkaian proyek terpadu mata kuliah **10S3001 - Kecerdasan Buatan**, Program Sarjana Sistem Informasi, Institut Teknologi Del, Semester Gasal 2026/2027, dengan dosen pengampu **Samuel Indra Gunawan Situmeang**.
+Project ini disusun untuk memenuhi rangkaian proyek terpadu mata kuliah **10S3001 - Kecerdasan Buatan**, Program Sarjana Sistem Informasi, Institut Teknologi Del, Semester Gasal 2026/2027, dengan dosen pengampu **Samuel Indra Gunawan Situmeang**.

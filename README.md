@@ -20,6 +20,7 @@ Sistem cerdas untuk membantu pencarian koleksi, rekomendasi buku, dukungan penga
 - [Instalasi dan Setup](#instalasi-dan-setup)
 - [Menjalankan Program](#menjalankan-program)
 - [Contoh Input dan Output](#contoh-input-dan-output)
+- [Repository dan Version Control](#repository-dan-version-control)
 - [Anggota Tim](#anggota-tim)
 - [Lisensi](#lisensi)
 - [Acknowledgment](#acknowledgment)
@@ -218,14 +219,19 @@ Expanded  : 3 states
 
 Nilai di atas adalah ilustrasi untuk menjelaskan kontrak input/output; hasil aktual bergantung pada graf lokasi, bobot sisi, dan heuristik yang digunakan.
 
+## Repository dan Version Control
+
+Repository ini menggunakan **MIT License**; ketentuan lengkapnya tersedia pada file [LICENSE](LICENSE). Manajemen environment dan dependensi menggunakan Astral `uv`: `pyproject.toml` mendefinisikan metadata proyek serta dependensi, sedangkan `uv.lock` mengunci resolusi dependensi agar setup dapat direproduksi. File `.gitignore` mengecualikan environment lokal, file rahasia, cache, dan artefak hasil generate tanpa mengabaikan dokumentasi atau konfigurasi proyek.
+
+Git digunakan untuk version control dan mencatat riwayat perubahan repository. Saat ini riwayat berisi commit awal `3735fa6 readme`.
+
 ## Anggota Tim
 
 | Nama | NIM | Peran / Tanggung Jawab |
 | --- | --- | --- |
-| *Akan diisi* | *Akan diisi* | *Akan diisi* |
-| *Akan diisi* | *Akan diisi* | *Akan diisi* |
-| *Akan diisi* | *Akan diisi* | *Akan diisi* |
-| *Akan diisi* | *Akan diisi* | *Akan diisi* |
+| *Margareth Bungaran Sitompul* | *12S24006* | *Akan diisi* |
+| *Griselda Tabitha Nathania Hutahaean* | *12S24026* | *Akan diisi* |
+| *Josef Christian Marpaung* | *12S24036* | *Akan diisi* |
 
 ## Lisensi
 

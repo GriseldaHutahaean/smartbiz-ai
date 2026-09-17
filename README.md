@@ -141,7 +141,7 @@ flowchart LR
 
 ## Struktur Project
 
-Struktur berikut menggambarkan struktur Python/AI yang direncanakan. Pada kondisi repository saat ini, file yang tersedia adalah `README.md`, `LICENSE`, dan `pyproject.toml`; folder implementasi akan ditambahkan sesuai kebutuhan milestone.
+Struktur berikut menggambarkan struktur Python/AI project. Baseline UCS yang sudah tersedia berada pada folder `scripts/`; folder implementasi AI lainnya dapat ditambahkan sesuai kebutuhan milestone.
 
 ```text
 smartbiz-ai/
@@ -161,7 +161,9 @@ smartbiz-ai/
 │   └── processed/
 ├── notebooks/
 ├── tests/
-└── docs/
+├── docs/
+└── scripts/
+    └── ucs_production.py
 ```
 
 ## Instalasi
@@ -195,7 +197,26 @@ Dependency project didefinisikan pada `pyproject.toml`. Saat ini dependency apli
 
 ## How to Run
 
-Implementasi aplikasi dan entry point belum tersedia pada repository saat ini, sehingga belum ada perintah untuk menjalankan dashboard atau modul AI. Setelah modul dibuat, perintah menjalankan program harus didokumentasikan di bagian ini sesuai entry point yang benar.
+Baseline UCS untuk keputusan produksi tersedia pada `scripts/ucs_production.py`. Modul ini hanya menangani alur persediaan berikut:
+
+```text
+Data penjualan
+→ kebutuhan/permintaan produk
+→ kondisi stok
+→ graph keputusan produksi
+→ UCS dengan f(n) = g(n)
+→ rekomendasi produksi berbiaya minimum
+```
+
+Jalankan contoh baseline dari root repository:
+
+```bash
+uv run python scripts/ucs_production.py
+```
+
+Contoh tersebut menggunakan produk Brownies, stok awal 5 unit, kebutuhan 20 unit, dan pilihan batch produksi 5, 10, atau 15 unit. State/node adalah kondisi stok, action/edge adalah keputusan produksi, dan cost adalah biaya produksi nyata. UCS mencari total biaya minimum sampai stok memenuhi kebutuhan.
+
+Modul ini merupakan salah satu bagian SmartBiz AI untuk mendukung keputusan persediaan dan produksi. Modul ini bukan supplier selection, route optimization, maupun sistem logistik. Perhitungan HPP, keuntungan, dan margin tetap merupakan perhitungan bisnis terpisah dari algoritma UCS.
 
 Untuk memeriksa bahwa environment Python project dapat digunakan, jalankan:
 

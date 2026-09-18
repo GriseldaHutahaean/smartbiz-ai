@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "Sistem pendukung keputusan cerdas untuk optimasi keuangan dan persediaan usaha"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pytest>=9.1.1",
+]

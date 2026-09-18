@@ -3,6 +3,7 @@ revision = 3
 requires-python = ">=3.11"
 
 [[package]]
+<<<<<<< HEAD
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -64,6 +65,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> 59fa9c234f68f17ba3038171ba62a3bd73226bf9
 name = "smartbiz-ai"
 version = "0.1.0"
 source = { virtual = "." }

@@ -259,9 +259,9 @@ Daftar tersebut merupakan kemungkinan pengembangan, bukan klaim bahwa fitur suda
 
 | Nama | NIM | Role |
 | --- | --- | --- |
-| Nama | NIM | Role |
-| Nama | NIM | Role |
-| Nama | NIM | Role |
+| Margareth Bungaran Sitompul | 12S24006 | Role |
+| Griselda Tabitha Nathania Hutahaean | 12S24026 | Role |
+| Josef Christian Marpaung | 12S24036 | Role |
 
 ## License
 

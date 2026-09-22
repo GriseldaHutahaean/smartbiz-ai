@@ -1,4 +1,4 @@
-# SmartBiz AI
+# SmartBiz AI by Kelompok 9
 
 ## Sistem Pendukung Keputusan Cerdas untuk Optimasi Keuangan dan Persediaan Usaha
 

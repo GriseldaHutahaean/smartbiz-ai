@@ -34,7 +34,7 @@ Pemilik usaha sering memiliki banyak data produk, bahan baku, biaya produksi, pe
 
 SmartBiz AI mengolah data keuangan dan persediaan untuk menampilkan kondisi usaha secara lebih terstruktur. Sistem memberikan analisis seperti omzet, pemasukan dan pengeluaran, laba/rugi, margin keuntungan, performa produk, serta insight kondisi keuangan. Selain itu, sistem menyediakan rekomendasi harga jual, prediksi kebutuhan persediaan berdasarkan pola penjualan historis jika data tersedia, dan peringatan ketika stok berada dalam kondisi kritis.
 
-Project ini bukan sistem akuntansi murni dan bukan hanya dashboard CRUD. Unsur kecerdasannya terletak pada analisis data, prediksi permintaan persediaan, serta rekomendasi keputusan yang mendukung pemilik usaha.
+Project ini bukan sistem akuntansi murni dan bukan hanya dashboard CRUD. Unsur kecerdasannya terletak pada analisis data, prediksi permintaan persediaan, serta rekomendasi keputusan yang mendukung pemilik usaha
 
 ## Tujuan Project
 

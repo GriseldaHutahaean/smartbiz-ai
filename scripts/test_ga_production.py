@@ -8,7 +8,7 @@ import pytest
 
 sys.path.append(str(Path(__file__).resolve().parent))
 
-from solver import genetic_search, recommend_all
+from scripts.solver import genetic_search, recommend_all
 from ucs_production import ProductionOption
 
 

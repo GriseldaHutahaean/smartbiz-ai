@@ -216,6 +216,17 @@ uv run python scripts/ucs_production.py
 
 Contoh tersebut menggunakan produk Brownies, stok awal 5 unit, kebutuhan 20 unit, dan pilihan batch produksi 5, 10, atau 15 unit. State/node adalah kondisi stok, action/edge adalah keputusan produksi, dan cost adalah biaya produksi nyata. UCS mencari total biaya minimum sampai stok memenuhi kebutuhan.
 
+### Menjalankan UCS dengan Dataset
+
+Dataset tersedia pada `data/smartbiz_json/` sebagai 13 file JSON per tabel. File gabungan `smartbiz_all.json` tidak disalin agar data tidak tersimpan dua kali. Jalankan rekomendasi untuk semua produk atau pilih satu produk:
+
+```bash
+uv run --no-project python scripts/ucs_dataset.py
+uv run --no-project python scripts/ucs_dataset.py --product-id P001
+```
+
+Runner menghitung stok saat ini sebagai jumlah `quantity_change` pada `inventory_history`, memakai `initial_stock` produk sebagai target, lalu mencari kombinasi batch berbiaya minimum dari `production_options`. Tabel `sales.json` tetap disertakan sebagai data historis, tetapi belum digunakan untuk meramal permintaan. Karena ledger stok dan penjualan berbeda untuk P005, P018, dan P027, rekomendasi saat ini mengikuti saldo ledger.
+
 Modul ini merupakan salah satu bagian SmartBiz AI untuk mendukung keputusan persediaan dan produksi. Modul ini bukan supplier selection, route optimization, maupun sistem logistik. Perhitungan HPP, keuntungan, dan margin tetap merupakan perhitungan bisnis terpisah dari algoritma UCS.
 
 Untuk memeriksa bahwa environment Python project dapat digunakan, jalankan:

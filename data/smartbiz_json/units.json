@@ -1,0 +1,14 @@
+[
+  {
+    "unit_id": 1,
+    "unit_name": "butir"
+  },
+  {
+    "unit_id": 2,
+    "unit_name": "gram"
+  },
+  {
+    "unit_id": 3,
+    "unit_name": "ml"
+  }
+]

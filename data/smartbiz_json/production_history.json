@@ -1,0 +1,5462 @@
+[
+  {
+    "production_id": 1,
+    "date": "2026-01-01",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 86642
+  },
+  {
+    "production_id": 2,
+    "date": "2026-01-01",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 76758
+  },
+  {
+    "production_id": 3,
+    "date": "2026-01-01",
+    "product_id": "P003",
+    "units_produced": 30,
+    "production_cost": 262496
+  },
+  {
+    "production_id": 4,
+    "date": "2026-01-01",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 267894
+  },
+  {
+    "production_id": 5,
+    "date": "2026-01-01",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 68396
+  },
+  {
+    "production_id": 6,
+    "date": "2026-01-01",
+    "product_id": "P006",
+    "units_produced": 30,
+    "production_cost": 159488
+  },
+  {
+    "production_id": 7,
+    "date": "2026-01-01",
+    "product_id": "P007",
+    "units_produced": 40,
+    "production_cost": 238288
+  },
+  {
+    "production_id": 8,
+    "date": "2026-01-01",
+    "product_id": "P008",
+    "units_produced": 20,
+    "production_cost": 48697
+  },
+  {
+    "production_id": 9,
+    "date": "2026-01-01",
+    "product_id": "P009",
+    "units_produced": 40,
+    "production_cost": 146358
+  },
+  {
+    "production_id": 10,
+    "date": "2026-01-01",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 266816
+  },
+  {
+    "production_id": 11,
+    "date": "2026-01-01",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 196361
+  },
+  {
+    "production_id": 12,
+    "date": "2026-01-01",
+    "product_id": "P012",
+    "units_produced": 10,
+    "production_cost": 44816
+  },
+  {
+    "production_id": 13,
+    "date": "2026-01-01",
+    "product_id": "P013",
+    "units_produced": 10,
+    "production_cost": 29646
+  },
+  {
+    "production_id": 14,
+    "date": "2026-01-01",
+    "product_id": "P014",
+    "units_produced": 40,
+    "production_cost": 289918
+  },
+  {
+    "production_id": 15,
+    "date": "2026-01-01",
+    "product_id": "P015",
+    "units_produced": 30,
+    "production_cost": 157951
+  },
+  {
+    "production_id": 16,
+    "date": "2026-01-01",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 257010
+  },
+  {
+    "production_id": 17,
+    "date": "2026-01-01",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 58153
+  },
+  {
+    "production_id": 18,
+    "date": "2026-01-01",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 435525
+  },
+  {
+    "production_id": 19,
+    "date": "2026-01-01",
+    "product_id": "P019",
+    "units_produced": 20,
+    "production_cost": 251512
+  },
+  {
+    "production_id": 20,
+    "date": "2026-01-01",
+    "product_id": "P020",
+    "units_produced": 20,
+    "production_cost": 208328
+  },
+  {
+    "production_id": 21,
+    "date": "2026-01-01",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 369342
+  },
+  {
+    "production_id": 22,
+    "date": "2026-01-01",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 109324
+  },
+  {
+    "production_id": 23,
+    "date": "2026-01-01",
+    "product_id": "P023",
+    "units_produced": 40,
+    "production_cost": 167130
+  },
+  {
+    "production_id": 24,
+    "date": "2026-01-01",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 43557
+  },
+  {
+    "production_id": 25,
+    "date": "2026-01-01",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 231966
+  },
+  {
+    "production_id": 26,
+    "date": "2026-01-01",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 50964
+  },
+  {
+    "production_id": 27,
+    "date": "2026-01-01",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 367604
+  },
+  {
+    "production_id": 28,
+    "date": "2026-01-01",
+    "product_id": "P028",
+    "units_produced": 40,
+    "production_cost": 261254
+  },
+  {
+    "production_id": 29,
+    "date": "2026-01-01",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 183992
+  },
+  {
+    "production_id": 30,
+    "date": "2026-01-01",
+    "product_id": "P030",
+    "units_produced": 10,
+    "production_cost": 44438
+  },
+  {
+    "production_id": 31,
+    "date": "2026-01-08",
+    "product_id": "P001",
+    "units_produced": 30,
+    "production_cost": 257792
+  },
+  {
+    "production_id": 32,
+    "date": "2026-01-08",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 19479
+  },
+  {
+    "production_id": 33,
+    "date": "2026-01-08",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 172541
+  },
+  {
+    "production_id": 34,
+    "date": "2026-01-08",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 279276
+  },
+  {
+    "production_id": 35,
+    "date": "2026-01-08",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 74572
+  },
+  {
+    "production_id": 36,
+    "date": "2026-01-08",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 217325
+  },
+  {
+    "production_id": 37,
+    "date": "2026-01-08",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 113422
+  },
+  {
+    "production_id": 38,
+    "date": "2026-01-08",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 103696
+  },
+  {
+    "production_id": 39,
+    "date": "2026-01-08",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 35590
+  },
+  {
+    "production_id": 40,
+    "date": "2026-01-08",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 134562
+  },
+  {
+    "production_id": 41,
+    "date": "2026-01-08",
+    "product_id": "P011",
+    "units_produced": 30,
+    "production_cost": 303361
+  },
+  {
+    "production_id": 42,
+    "date": "2026-01-08",
+    "product_id": "P012",
+    "units_produced": 30,
+    "production_cost": 130355
+  },
+  {
+    "production_id": 43,
+    "date": "2026-01-08",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 124078
+  },
+  {
+    "production_id": 44,
+    "date": "2026-01-08",
+    "product_id": "P014",
+    "units_produced": 40,
+    "production_cost": 283781
+  },
+  {
+    "production_id": 45,
+    "date": "2026-01-08",
+    "product_id": "P015",
+    "units_produced": 40,
+    "production_cost": 225000
+  },
+  {
+    "production_id": 46,
+    "date": "2026-01-08",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 193953
+  },
+  {
+    "production_id": 47,
+    "date": "2026-01-08",
+    "product_id": "P017",
+    "units_produced": 30,
+    "production_cost": 183283
+  },
+  {
+    "production_id": 48,
+    "date": "2026-01-08",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 279667
+  },
+  {
+    "production_id": 49,
+    "date": "2026-01-08",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 489780
+  },
+  {
+    "production_id": 50,
+    "date": "2026-01-08",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 301573
+  },
+  {
+    "production_id": 51,
+    "date": "2026-01-08",
+    "product_id": "P021",
+    "units_produced": 10,
+    "production_cost": 87188
+  },
+  {
+    "production_id": 52,
+    "date": "2026-01-08",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 105510
+  },
+  {
+    "production_id": 53,
+    "date": "2026-01-08",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 42030
+  },
+  {
+    "production_id": 54,
+    "date": "2026-01-08",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 121884
+  },
+  {
+    "production_id": 55,
+    "date": "2026-01-08",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 183878
+  },
+  {
+    "production_id": 56,
+    "date": "2026-01-08",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 52671
+  },
+  {
+    "production_id": 57,
+    "date": "2026-01-08",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 92411
+  },
+  {
+    "production_id": 58,
+    "date": "2026-01-08",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 171695
+  },
+  {
+    "production_id": 59,
+    "date": "2026-01-08",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 44301
+  },
+  {
+    "production_id": 60,
+    "date": "2026-01-08",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 178985
+  },
+  {
+    "production_id": 61,
+    "date": "2026-01-15",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 76421
+  },
+  {
+    "production_id": 62,
+    "date": "2026-01-15",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 38387
+  },
+  {
+    "production_id": 63,
+    "date": "2026-01-15",
+    "product_id": "P003",
+    "units_produced": 30,
+    "production_cost": 281928
+  },
+  {
+    "production_id": 64,
+    "date": "2026-01-15",
+    "product_id": "P004",
+    "units_produced": 10,
+    "production_cost": 88289
+  },
+  {
+    "production_id": 65,
+    "date": "2026-01-15",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 133625
+  },
+  {
+    "production_id": 66,
+    "date": "2026-01-15",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 192966
+  },
+  {
+    "production_id": 67,
+    "date": "2026-01-15",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 54665
+  },
+  {
+    "production_id": 68,
+    "date": "2026-01-15",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 25458
+  },
+  {
+    "production_id": 69,
+    "date": "2026-01-15",
+    "product_id": "P009",
+    "units_produced": 40,
+    "production_cost": 152256
+  },
+  {
+    "production_id": 70,
+    "date": "2026-01-15",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 149917
+  },
+  {
+    "production_id": 71,
+    "date": "2026-01-15",
+    "product_id": "P011",
+    "units_produced": 30,
+    "production_cost": 292130
+  },
+  {
+    "production_id": 72,
+    "date": "2026-01-15",
+    "product_id": "P012",
+    "units_produced": 30,
+    "production_cost": 133930
+  },
+  {
+    "production_id": 73,
+    "date": "2026-01-15",
+    "product_id": "P013",
+    "units_produced": 10,
+    "production_cost": 31908
+  },
+  {
+    "production_id": 74,
+    "date": "2026-01-15",
+    "product_id": "P014",
+    "units_produced": 40,
+    "production_cost": 269071
+  },
+  {
+    "production_id": 75,
+    "date": "2026-01-15",
+    "product_id": "P015",
+    "units_produced": 30,
+    "production_cost": 178917
+  },
+  {
+    "production_id": 76,
+    "date": "2026-01-15",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 262693
+  },
+  {
+    "production_id": 77,
+    "date": "2026-01-15",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 126159
+  },
+  {
+    "production_id": 78,
+    "date": "2026-01-15",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 151792
+  },
+  {
+    "production_id": 79,
+    "date": "2026-01-15",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 493954
+  },
+  {
+    "production_id": 80,
+    "date": "2026-01-15",
+    "product_id": "P020",
+    "units_produced": 40,
+    "production_cost": 413445
+  },
+  {
+    "production_id": 81,
+    "date": "2026-01-15",
+    "product_id": "P021",
+    "units_produced": 10,
+    "production_cost": 96197
+  },
+  {
+    "production_id": 82,
+    "date": "2026-01-15",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 222790
+  },
+  {
+    "production_id": 83,
+    "date": "2026-01-15",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 42320
+  },
+  {
+    "production_id": 84,
+    "date": "2026-01-15",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 168233
+  },
+  {
+    "production_id": 85,
+    "date": "2026-01-15",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 193948
+  },
+  {
+    "production_id": 86,
+    "date": "2026-01-15",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 197939
+  },
+  {
+    "production_id": 87,
+    "date": "2026-01-15",
+    "product_id": "P027",
+    "units_produced": 30,
+    "production_cost": 270056
+  },
+  {
+    "production_id": 88,
+    "date": "2026-01-15",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 188025
+  },
+  {
+    "production_id": 89,
+    "date": "2026-01-15",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 46709
+  },
+  {
+    "production_id": 90,
+    "date": "2026-01-15",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 130988
+  },
+  {
+    "production_id": 91,
+    "date": "2026-01-22",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 308303
+  },
+  {
+    "production_id": 92,
+    "date": "2026-01-22",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 42757
+  },
+  {
+    "production_id": 93,
+    "date": "2026-01-22",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 367074
+  },
+  {
+    "production_id": 94,
+    "date": "2026-01-22",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 164589
+  },
+  {
+    "production_id": 95,
+    "date": "2026-01-22",
+    "product_id": "P005",
+    "units_produced": 10,
+    "production_cost": 34330
+  },
+  {
+    "production_id": 96,
+    "date": "2026-01-22",
+    "product_id": "P006",
+    "units_produced": 20,
+    "production_cost": 109016
+  },
+  {
+    "production_id": 97,
+    "date": "2026-01-22",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 120273
+  },
+  {
+    "production_id": 98,
+    "date": "2026-01-22",
+    "product_id": "P008",
+    "units_produced": 20,
+    "production_cost": 50092
+  },
+  {
+    "production_id": 99,
+    "date": "2026-01-22",
+    "product_id": "P009",
+    "units_produced": 20,
+    "production_cost": 71210
+  },
+  {
+    "production_id": 100,
+    "date": "2026-01-22",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 290106
+  },
+  {
+    "production_id": 101,
+    "date": "2026-01-22",
+    "product_id": "P011",
+    "units_produced": 10,
+    "production_cost": 108621
+  },
+  {
+    "production_id": 102,
+    "date": "2026-01-22",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 89149
+  },
+  {
+    "production_id": 103,
+    "date": "2026-01-22",
+    "product_id": "P013",
+    "units_produced": 10,
+    "production_cost": 29293
+  },
+  {
+    "production_id": 104,
+    "date": "2026-01-22",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 200951
+  },
+  {
+    "production_id": 105,
+    "date": "2026-01-22",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 120404
+  },
+  {
+    "production_id": 106,
+    "date": "2026-01-22",
+    "product_id": "P016",
+    "units_produced": 10,
+    "production_cost": 71176
+  },
+  {
+    "production_id": 107,
+    "date": "2026-01-22",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 261863
+  },
+  {
+    "production_id": 108,
+    "date": "2026-01-22",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 417034
+  },
+  {
+    "production_id": 109,
+    "date": "2026-01-22",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 478293
+  },
+  {
+    "production_id": 110,
+    "date": "2026-01-22",
+    "product_id": "P020",
+    "units_produced": 20,
+    "production_cost": 215098
+  },
+  {
+    "production_id": 111,
+    "date": "2026-01-22",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 196552
+  },
+  {
+    "production_id": 112,
+    "date": "2026-01-22",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 107252
+  },
+  {
+    "production_id": 113,
+    "date": "2026-01-22",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 38720
+  },
+  {
+    "production_id": 114,
+    "date": "2026-01-22",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 155773
+  },
+  {
+    "production_id": 115,
+    "date": "2026-01-22",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 187779
+  },
+  {
+    "production_id": 116,
+    "date": "2026-01-22",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 54975
+  },
+  {
+    "production_id": 117,
+    "date": "2026-01-22",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 327013
+  },
+  {
+    "production_id": 118,
+    "date": "2026-01-22",
+    "product_id": "P028",
+    "units_produced": 20,
+    "production_cost": 130151
+  },
+  {
+    "production_id": 119,
+    "date": "2026-01-22",
+    "product_id": "P029",
+    "units_produced": 20,
+    "production_cost": 98197
+  },
+  {
+    "production_id": 120,
+    "date": "2026-01-22",
+    "product_id": "P030",
+    "units_produced": 20,
+    "production_cost": 91042
+  },
+  {
+    "production_id": 121,
+    "date": "2026-01-29",
+    "product_id": "P001",
+    "units_produced": 20,
+    "production_cost": 152414
+  },
+  {
+    "production_id": 122,
+    "date": "2026-01-29",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 20679
+  },
+  {
+    "production_id": 123,
+    "date": "2026-01-29",
+    "product_id": "P003",
+    "units_produced": 30,
+    "production_cost": 288430
+  },
+  {
+    "production_id": 124,
+    "date": "2026-01-29",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 174618
+  },
+  {
+    "production_id": 125,
+    "date": "2026-01-29",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 108186
+  },
+  {
+    "production_id": 126,
+    "date": "2026-01-29",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 195165
+  },
+  {
+    "production_id": 127,
+    "date": "2026-01-29",
+    "product_id": "P007",
+    "units_produced": 30,
+    "production_cost": 164646
+  },
+  {
+    "production_id": 128,
+    "date": "2026-01-29",
+    "product_id": "P008",
+    "units_produced": 30,
+    "production_cost": 73908
+  },
+  {
+    "production_id": 129,
+    "date": "2026-01-29",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 37780
+  },
+  {
+    "production_id": 130,
+    "date": "2026-01-29",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 302725
+  },
+  {
+    "production_id": 131,
+    "date": "2026-01-29",
+    "product_id": "P011",
+    "units_produced": 40,
+    "production_cost": 399613
+  },
+  {
+    "production_id": 132,
+    "date": "2026-01-29",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 92365
+  },
+  {
+    "production_id": 133,
+    "date": "2026-01-29",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 97469
+  },
+  {
+    "production_id": 134,
+    "date": "2026-01-29",
+    "product_id": "P014",
+    "units_produced": 10,
+    "production_cost": 75819
+  },
+  {
+    "production_id": 135,
+    "date": "2026-01-29",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 106932
+  },
+  {
+    "production_id": 136,
+    "date": "2026-01-29",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 207792
+  },
+  {
+    "production_id": 137,
+    "date": "2026-01-29",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 62811
+  },
+  {
+    "production_id": 138,
+    "date": "2026-01-29",
+    "product_id": "P018",
+    "units_produced": 40,
+    "production_cost": 592631
+  },
+  {
+    "production_id": 139,
+    "date": "2026-01-29",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 389945
+  },
+  {
+    "production_id": 140,
+    "date": "2026-01-29",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 322485
+  },
+  {
+    "production_id": 141,
+    "date": "2026-01-29",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 355695
+  },
+  {
+    "production_id": 142,
+    "date": "2026-01-29",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 224146
+  },
+  {
+    "production_id": 143,
+    "date": "2026-01-29",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 40935
+  },
+  {
+    "production_id": 144,
+    "date": "2026-01-29",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 120251
+  },
+  {
+    "production_id": 145,
+    "date": "2026-01-29",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 59691
+  },
+  {
+    "production_id": 146,
+    "date": "2026-01-29",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 47751
+  },
+  {
+    "production_id": 147,
+    "date": "2026-01-29",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 357384
+  },
+  {
+    "production_id": 148,
+    "date": "2026-01-29",
+    "product_id": "P028",
+    "units_produced": 10,
+    "production_cost": 65393
+  },
+  {
+    "production_id": 149,
+    "date": "2026-01-29",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 43224
+  },
+  {
+    "production_id": 150,
+    "date": "2026-01-29",
+    "product_id": "P030",
+    "units_produced": 10,
+    "production_cost": 47214
+  },
+  {
+    "production_id": 151,
+    "date": "2026-02-05",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 87538
+  },
+  {
+    "production_id": 152,
+    "date": "2026-02-05",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 78787
+  },
+  {
+    "production_id": 153,
+    "date": "2026-02-05",
+    "product_id": "P003",
+    "units_produced": 10,
+    "production_cost": 95482
+  },
+  {
+    "production_id": 154,
+    "date": "2026-02-05",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 166437
+  },
+  {
+    "production_id": 155,
+    "date": "2026-02-05",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 76403
+  },
+  {
+    "production_id": 156,
+    "date": "2026-02-05",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 206976
+  },
+  {
+    "production_id": 157,
+    "date": "2026-02-05",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 120236
+  },
+  {
+    "production_id": 158,
+    "date": "2026-02-05",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 24450
+  },
+  {
+    "production_id": 159,
+    "date": "2026-02-05",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 37365
+  },
+  {
+    "production_id": 160,
+    "date": "2026-02-05",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 148504
+  },
+  {
+    "production_id": 161,
+    "date": "2026-02-05",
+    "product_id": "P011",
+    "units_produced": 30,
+    "production_cost": 316165
+  },
+  {
+    "production_id": 162,
+    "date": "2026-02-05",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 91734
+  },
+  {
+    "production_id": 163,
+    "date": "2026-02-05",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 116359
+  },
+  {
+    "production_id": 164,
+    "date": "2026-02-05",
+    "product_id": "P014",
+    "units_produced": 40,
+    "production_cost": 285884
+  },
+  {
+    "production_id": 165,
+    "date": "2026-02-05",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 111597
+  },
+  {
+    "production_id": 166,
+    "date": "2026-02-05",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 195855
+  },
+  {
+    "production_id": 167,
+    "date": "2026-02-05",
+    "product_id": "P017",
+    "units_produced": 30,
+    "production_cost": 184399
+  },
+  {
+    "production_id": 168,
+    "date": "2026-02-05",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 400555
+  },
+  {
+    "production_id": 169,
+    "date": "2026-02-05",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 357456
+  },
+  {
+    "production_id": 170,
+    "date": "2026-02-05",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 300036
+  },
+  {
+    "production_id": 171,
+    "date": "2026-02-05",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 374761
+  },
+  {
+    "production_id": 172,
+    "date": "2026-02-05",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 108667
+  },
+  {
+    "production_id": 173,
+    "date": "2026-02-05",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 40504
+  },
+  {
+    "production_id": 174,
+    "date": "2026-02-05",
+    "product_id": "P024",
+    "units_produced": 20,
+    "production_cost": 83807
+  },
+  {
+    "production_id": 175,
+    "date": "2026-02-05",
+    "product_id": "P025",
+    "units_produced": 20,
+    "production_cost": 120435
+  },
+  {
+    "production_id": 176,
+    "date": "2026-02-05",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 150494
+  },
+  {
+    "production_id": 177,
+    "date": "2026-02-05",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 360533
+  },
+  {
+    "production_id": 178,
+    "date": "2026-02-05",
+    "product_id": "P028",
+    "units_produced": 20,
+    "production_cost": 114554
+  },
+  {
+    "production_id": 179,
+    "date": "2026-02-05",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 135427
+  },
+  {
+    "production_id": 180,
+    "date": "2026-02-05",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 132232
+  },
+  {
+    "production_id": 181,
+    "date": "2026-02-12",
+    "product_id": "P001",
+    "units_produced": 20,
+    "production_cost": 163378
+  },
+  {
+    "production_id": 182,
+    "date": "2026-02-12",
+    "product_id": "P002",
+    "units_produced": 30,
+    "production_cost": 59378
+  },
+  {
+    "production_id": 183,
+    "date": "2026-02-12",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 193255
+  },
+  {
+    "production_id": 184,
+    "date": "2026-02-12",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 169401
+  },
+  {
+    "production_id": 185,
+    "date": "2026-02-12",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 114502
+  },
+  {
+    "production_id": 186,
+    "date": "2026-02-12",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 206482
+  },
+  {
+    "production_id": 187,
+    "date": "2026-02-12",
+    "product_id": "P007",
+    "units_produced": 30,
+    "production_cost": 178299
+  },
+  {
+    "production_id": 188,
+    "date": "2026-02-12",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 25132
+  },
+  {
+    "production_id": 189,
+    "date": "2026-02-12",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 35905
+  },
+  {
+    "production_id": 190,
+    "date": "2026-02-12",
+    "product_id": "P010",
+    "units_produced": 30,
+    "production_cost": 207621
+  },
+  {
+    "production_id": 191,
+    "date": "2026-02-12",
+    "product_id": "P011",
+    "units_produced": 40,
+    "production_cost": 386796
+  },
+  {
+    "production_id": 192,
+    "date": "2026-02-12",
+    "product_id": "P012",
+    "units_produced": 40,
+    "production_cost": 178768
+  },
+  {
+    "production_id": 193,
+    "date": "2026-02-12",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 91784
+  },
+  {
+    "production_id": 194,
+    "date": "2026-02-12",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 221420
+  },
+  {
+    "production_id": 195,
+    "date": "2026-02-12",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 115387
+  },
+  {
+    "production_id": 196,
+    "date": "2026-02-12",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 136535
+  },
+  {
+    "production_id": 197,
+    "date": "2026-02-12",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 263456
+  },
+  {
+    "production_id": 198,
+    "date": "2026-02-12",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 290750
+  },
+  {
+    "production_id": 199,
+    "date": "2026-02-12",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 351903
+  },
+  {
+    "production_id": 200,
+    "date": "2026-02-12",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 100042
+  },
+  {
+    "production_id": 201,
+    "date": "2026-02-12",
+    "product_id": "P021",
+    "units_produced": 10,
+    "production_cost": 88010
+  },
+  {
+    "production_id": 202,
+    "date": "2026-02-12",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 228923
+  },
+  {
+    "production_id": 203,
+    "date": "2026-02-12",
+    "product_id": "P023",
+    "units_produced": 20,
+    "production_cost": 85895
+  },
+  {
+    "production_id": 204,
+    "date": "2026-02-12",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 155493
+  },
+  {
+    "production_id": 205,
+    "date": "2026-02-12",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 57283
+  },
+  {
+    "production_id": 206,
+    "date": "2026-02-12",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 213873
+  },
+  {
+    "production_id": 207,
+    "date": "2026-02-12",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 373476
+  },
+  {
+    "production_id": 208,
+    "date": "2026-02-12",
+    "product_id": "P028",
+    "units_produced": 10,
+    "production_cost": 62746
+  },
+  {
+    "production_id": 209,
+    "date": "2026-02-12",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 46401
+  },
+  {
+    "production_id": 210,
+    "date": "2026-02-12",
+    "product_id": "P030",
+    "units_produced": 20,
+    "production_cost": 89413
+  },
+  {
+    "production_id": 211,
+    "date": "2026-02-19",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 314732
+  },
+  {
+    "production_id": 212,
+    "date": "2026-02-19",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 77354
+  },
+  {
+    "production_id": 213,
+    "date": "2026-02-19",
+    "product_id": "P003",
+    "units_produced": 10,
+    "production_cost": 89772
+  },
+  {
+    "production_id": 214,
+    "date": "2026-02-19",
+    "product_id": "P004",
+    "units_produced": 10,
+    "production_cost": 88387
+  },
+  {
+    "production_id": 215,
+    "date": "2026-02-19",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 140522
+  },
+  {
+    "production_id": 216,
+    "date": "2026-02-19",
+    "product_id": "P006",
+    "units_produced": 10,
+    "production_cost": 50522
+  },
+  {
+    "production_id": 217,
+    "date": "2026-02-19",
+    "product_id": "P007",
+    "units_produced": 40,
+    "production_cost": 213173
+  },
+  {
+    "production_id": 218,
+    "date": "2026-02-19",
+    "product_id": "P008",
+    "units_produced": 30,
+    "production_cost": 75194
+  },
+  {
+    "production_id": 219,
+    "date": "2026-02-19",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 34040
+  },
+  {
+    "production_id": 220,
+    "date": "2026-02-19",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 284176
+  },
+  {
+    "production_id": 221,
+    "date": "2026-02-19",
+    "product_id": "P011",
+    "units_produced": 10,
+    "production_cost": 96837
+  },
+  {
+    "production_id": 222,
+    "date": "2026-02-19",
+    "product_id": "P012",
+    "units_produced": 40,
+    "production_cost": 190707
+  },
+  {
+    "production_id": 223,
+    "date": "2026-02-19",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 65525
+  },
+  {
+    "production_id": 224,
+    "date": "2026-02-19",
+    "product_id": "P014",
+    "units_produced": 20,
+    "production_cost": 146899
+  },
+  {
+    "production_id": 225,
+    "date": "2026-02-19",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 53030
+  },
+  {
+    "production_id": 226,
+    "date": "2026-02-19",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 248532
+  },
+  {
+    "production_id": 227,
+    "date": "2026-02-19",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 63844
+  },
+  {
+    "production_id": 228,
+    "date": "2026-02-19",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 277685
+  },
+  {
+    "production_id": 229,
+    "date": "2026-02-19",
+    "product_id": "P019",
+    "units_produced": 20,
+    "production_cost": 235573
+  },
+  {
+    "production_id": 230,
+    "date": "2026-02-19",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 324185
+  },
+  {
+    "production_id": 231,
+    "date": "2026-02-19",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 395756
+  },
+  {
+    "production_id": 232,
+    "date": "2026-02-19",
+    "product_id": "P022",
+    "units_produced": 30,
+    "production_cost": 360310
+  },
+  {
+    "production_id": 233,
+    "date": "2026-02-19",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 38445
+  },
+  {
+    "production_id": 234,
+    "date": "2026-02-19",
+    "product_id": "P024",
+    "units_produced": 20,
+    "production_cost": 86814
+  },
+  {
+    "production_id": 235,
+    "date": "2026-02-19",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 63235
+  },
+  {
+    "production_id": 236,
+    "date": "2026-02-19",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 154969
+  },
+  {
+    "production_id": 237,
+    "date": "2026-02-19",
+    "product_id": "P027",
+    "units_produced": 20,
+    "production_cost": 176785
+  },
+  {
+    "production_id": 238,
+    "date": "2026-02-19",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 196508
+  },
+  {
+    "production_id": 239,
+    "date": "2026-02-19",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 142983
+  },
+  {
+    "production_id": 240,
+    "date": "2026-02-19",
+    "product_id": "P030",
+    "units_produced": 20,
+    "production_cost": 85624
+  },
+  {
+    "production_id": 241,
+    "date": "2026-02-26",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 80999
+  },
+  {
+    "production_id": 242,
+    "date": "2026-02-26",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 85680
+  },
+  {
+    "production_id": 243,
+    "date": "2026-02-26",
+    "product_id": "P003",
+    "units_produced": 10,
+    "production_cost": 86846
+  },
+  {
+    "production_id": 244,
+    "date": "2026-02-26",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 183304
+  },
+  {
+    "production_id": 245,
+    "date": "2026-02-26",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 143139
+  },
+  {
+    "production_id": 246,
+    "date": "2026-02-26",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 198453
+  },
+  {
+    "production_id": 247,
+    "date": "2026-02-26",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 119396
+  },
+  {
+    "production_id": 248,
+    "date": "2026-02-26",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 25047
+  },
+  {
+    "production_id": 249,
+    "date": "2026-02-26",
+    "product_id": "P009",
+    "units_produced": 20,
+    "production_cost": 67322
+  },
+  {
+    "production_id": 250,
+    "date": "2026-02-26",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 278502
+  },
+  {
+    "production_id": 251,
+    "date": "2026-02-26",
+    "product_id": "P011",
+    "units_produced": 40,
+    "production_cost": 427056
+  },
+  {
+    "production_id": 252,
+    "date": "2026-02-26",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 97171
+  },
+  {
+    "production_id": 253,
+    "date": "2026-02-26",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 125446
+  },
+  {
+    "production_id": 254,
+    "date": "2026-02-26",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 229995
+  },
+  {
+    "production_id": 255,
+    "date": "2026-02-26",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 60438
+  },
+  {
+    "production_id": 256,
+    "date": "2026-02-26",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 125838
+  },
+  {
+    "production_id": 257,
+    "date": "2026-02-26",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 117169
+  },
+  {
+    "production_id": 258,
+    "date": "2026-02-26",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 450194
+  },
+  {
+    "production_id": 259,
+    "date": "2026-02-26",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 516692
+  },
+  {
+    "production_id": 260,
+    "date": "2026-02-26",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 103738
+  },
+  {
+    "production_id": 261,
+    "date": "2026-02-26",
+    "product_id": "P021",
+    "units_produced": 30,
+    "production_cost": 295444
+  },
+  {
+    "production_id": 262,
+    "date": "2026-02-26",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 225519
+  },
+  {
+    "production_id": 263,
+    "date": "2026-02-26",
+    "product_id": "P023",
+    "units_produced": 20,
+    "production_cost": 87327
+  },
+  {
+    "production_id": 264,
+    "date": "2026-02-26",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 124383
+  },
+  {
+    "production_id": 265,
+    "date": "2026-02-26",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 242945
+  },
+  {
+    "production_id": 266,
+    "date": "2026-02-26",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 204385
+  },
+  {
+    "production_id": 267,
+    "date": "2026-02-26",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 81342
+  },
+  {
+    "production_id": 268,
+    "date": "2026-02-26",
+    "product_id": "P028",
+    "units_produced": 20,
+    "production_cost": 121192
+  },
+  {
+    "production_id": 269,
+    "date": "2026-02-26",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 48519
+  },
+  {
+    "production_id": 270,
+    "date": "2026-02-26",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 181861
+  },
+  {
+    "production_id": 271,
+    "date": "2026-03-05",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 311727
+  },
+  {
+    "production_id": 272,
+    "date": "2026-03-05",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 77976
+  },
+  {
+    "production_id": 273,
+    "date": "2026-03-05",
+    "product_id": "P003",
+    "units_produced": 30,
+    "production_cost": 257019
+  },
+  {
+    "production_id": 274,
+    "date": "2026-03-05",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 277879
+  },
+  {
+    "production_id": 275,
+    "date": "2026-03-05",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 107004
+  },
+  {
+    "production_id": 276,
+    "date": "2026-03-05",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 209144
+  },
+  {
+    "production_id": 277,
+    "date": "2026-03-05",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 57698
+  },
+  {
+    "production_id": 278,
+    "date": "2026-03-05",
+    "product_id": "P008",
+    "units_produced": 30,
+    "production_cost": 71252
+  },
+  {
+    "production_id": 279,
+    "date": "2026-03-05",
+    "product_id": "P009",
+    "units_produced": 30,
+    "production_cost": 111239
+  },
+  {
+    "production_id": 280,
+    "date": "2026-03-05",
+    "product_id": "P010",
+    "units_produced": 30,
+    "production_cost": 200078
+  },
+  {
+    "production_id": 281,
+    "date": "2026-03-05",
+    "product_id": "P011",
+    "units_produced": 30,
+    "production_cost": 303451
+  },
+  {
+    "production_id": 282,
+    "date": "2026-03-05",
+    "product_id": "P012",
+    "units_produced": 10,
+    "production_cost": 47470
+  },
+  {
+    "production_id": 283,
+    "date": "2026-03-05",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 92498
+  },
+  {
+    "production_id": 284,
+    "date": "2026-03-05",
+    "product_id": "P014",
+    "units_produced": 20,
+    "production_cost": 152017
+  },
+  {
+    "production_id": 285,
+    "date": "2026-03-05",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 56955
+  },
+  {
+    "production_id": 286,
+    "date": "2026-03-05",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 284007
+  },
+  {
+    "production_id": 287,
+    "date": "2026-03-05",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 117547
+  },
+  {
+    "production_id": 288,
+    "date": "2026-03-05",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 151795
+  },
+  {
+    "production_id": 289,
+    "date": "2026-03-05",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 353378
+  },
+  {
+    "production_id": 290,
+    "date": "2026-03-05",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 102457
+  },
+  {
+    "production_id": 291,
+    "date": "2026-03-05",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 187455
+  },
+  {
+    "production_id": 292,
+    "date": "2026-03-05",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 448680
+  },
+  {
+    "production_id": 293,
+    "date": "2026-03-05",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 42349
+  },
+  {
+    "production_id": 294,
+    "date": "2026-03-05",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 41619
+  },
+  {
+    "production_id": 295,
+    "date": "2026-03-05",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 63927
+  },
+  {
+    "production_id": 296,
+    "date": "2026-03-05",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 161417
+  },
+  {
+    "production_id": 297,
+    "date": "2026-03-05",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 84608
+  },
+  {
+    "production_id": 298,
+    "date": "2026-03-05",
+    "product_id": "P028",
+    "units_produced": 20,
+    "production_cost": 130635
+  },
+  {
+    "production_id": 299,
+    "date": "2026-03-05",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 196490
+  },
+  {
+    "production_id": 300,
+    "date": "2026-03-05",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 197274
+  },
+  {
+    "production_id": 301,
+    "date": "2026-03-12",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 338022
+  },
+  {
+    "production_id": 302,
+    "date": "2026-03-12",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 85681
+  },
+  {
+    "production_id": 303,
+    "date": "2026-03-12",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 385606
+  },
+  {
+    "production_id": 304,
+    "date": "2026-03-12",
+    "product_id": "P004",
+    "units_produced": 10,
+    "production_cost": 89545
+  },
+  {
+    "production_id": 305,
+    "date": "2026-03-12",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 107263
+  },
+  {
+    "production_id": 306,
+    "date": "2026-03-12",
+    "product_id": "P006",
+    "units_produced": 20,
+    "production_cost": 104811
+  },
+  {
+    "production_id": 307,
+    "date": "2026-03-12",
+    "product_id": "P007",
+    "units_produced": 30,
+    "production_cost": 159531
+  },
+  {
+    "production_id": 308,
+    "date": "2026-03-12",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 105138
+  },
+  {
+    "production_id": 309,
+    "date": "2026-03-12",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 37425
+  },
+  {
+    "production_id": 310,
+    "date": "2026-03-12",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 288014
+  },
+  {
+    "production_id": 311,
+    "date": "2026-03-12",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 212969
+  },
+  {
+    "production_id": 312,
+    "date": "2026-03-12",
+    "product_id": "P012",
+    "units_produced": 10,
+    "production_cost": 46874
+  },
+  {
+    "production_id": 313,
+    "date": "2026-03-12",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 65235
+  },
+  {
+    "production_id": 314,
+    "date": "2026-03-12",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 218396
+  },
+  {
+    "production_id": 315,
+    "date": "2026-03-12",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 106225
+  },
+  {
+    "production_id": 316,
+    "date": "2026-03-12",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 128035
+  },
+  {
+    "production_id": 317,
+    "date": "2026-03-12",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 118215
+  },
+  {
+    "production_id": 318,
+    "date": "2026-03-12",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 294964
+  },
+  {
+    "production_id": 319,
+    "date": "2026-03-12",
+    "product_id": "P019",
+    "units_produced": 10,
+    "production_cost": 114097
+  },
+  {
+    "production_id": 320,
+    "date": "2026-03-12",
+    "product_id": "P020",
+    "units_produced": 20,
+    "production_cost": 194204
+  },
+  {
+    "production_id": 321,
+    "date": "2026-03-12",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 180118
+  },
+  {
+    "production_id": 322,
+    "date": "2026-03-12",
+    "product_id": "P022",
+    "units_produced": 30,
+    "production_cost": 326134
+  },
+  {
+    "production_id": 323,
+    "date": "2026-03-12",
+    "product_id": "P023",
+    "units_produced": 20,
+    "production_cost": 87970
+  },
+  {
+    "production_id": 324,
+    "date": "2026-03-12",
+    "product_id": "P024",
+    "units_produced": 20,
+    "production_cost": 86636
+  },
+  {
+    "production_id": 325,
+    "date": "2026-03-12",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 59900
+  },
+  {
+    "production_id": 326,
+    "date": "2026-03-12",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 49950
+  },
+  {
+    "production_id": 327,
+    "date": "2026-03-12",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 82389
+  },
+  {
+    "production_id": 328,
+    "date": "2026-03-12",
+    "product_id": "P028",
+    "units_produced": 10,
+    "production_cost": 63110
+  },
+  {
+    "production_id": 329,
+    "date": "2026-03-12",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 45698
+  },
+  {
+    "production_id": 330,
+    "date": "2026-03-12",
+    "product_id": "P030",
+    "units_produced": 20,
+    "production_cost": 91305
+  },
+  {
+    "production_id": 331,
+    "date": "2026-03-19",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 76045
+  },
+  {
+    "production_id": 332,
+    "date": "2026-03-19",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 42420
+  },
+  {
+    "production_id": 333,
+    "date": "2026-03-19",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 174533
+  },
+  {
+    "production_id": 334,
+    "date": "2026-03-19",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 242992
+  },
+  {
+    "production_id": 335,
+    "date": "2026-03-19",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 141054
+  },
+  {
+    "production_id": 336,
+    "date": "2026-03-19",
+    "product_id": "P006",
+    "units_produced": 30,
+    "production_cost": 152110
+  },
+  {
+    "production_id": 337,
+    "date": "2026-03-19",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 114427
+  },
+  {
+    "production_id": 338,
+    "date": "2026-03-19",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 24689
+  },
+  {
+    "production_id": 339,
+    "date": "2026-03-19",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 35807
+  },
+  {
+    "production_id": 340,
+    "date": "2026-03-19",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 139506
+  },
+  {
+    "production_id": 341,
+    "date": "2026-03-19",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 198344
+  },
+  {
+    "production_id": 342,
+    "date": "2026-03-19",
+    "product_id": "P012",
+    "units_produced": 10,
+    "production_cost": 48553
+  },
+  {
+    "production_id": 343,
+    "date": "2026-03-19",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 87978
+  },
+  {
+    "production_id": 344,
+    "date": "2026-03-19",
+    "product_id": "P014",
+    "units_produced": 40,
+    "production_cost": 277949
+  },
+  {
+    "production_id": 345,
+    "date": "2026-03-19",
+    "product_id": "P015",
+    "units_produced": 40,
+    "production_cost": 229544
+  },
+  {
+    "production_id": 346,
+    "date": "2026-03-19",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 132905
+  },
+  {
+    "production_id": 347,
+    "date": "2026-03-19",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 244338
+  },
+  {
+    "production_id": 348,
+    "date": "2026-03-19",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 134377
+  },
+  {
+    "production_id": 349,
+    "date": "2026-03-19",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 465173
+  },
+  {
+    "production_id": 350,
+    "date": "2026-03-19",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 108073
+  },
+  {
+    "production_id": 351,
+    "date": "2026-03-19",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 177458
+  },
+  {
+    "production_id": 352,
+    "date": "2026-03-19",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 107612
+  },
+  {
+    "production_id": 353,
+    "date": "2026-03-19",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 43941
+  },
+  {
+    "production_id": 354,
+    "date": "2026-03-19",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 42004
+  },
+  {
+    "production_id": 355,
+    "date": "2026-03-19",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 247001
+  },
+  {
+    "production_id": 356,
+    "date": "2026-03-19",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 147834
+  },
+  {
+    "production_id": 357,
+    "date": "2026-03-19",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 358094
+  },
+  {
+    "production_id": 358,
+    "date": "2026-03-19",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 185821
+  },
+  {
+    "production_id": 359,
+    "date": "2026-03-19",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 173566
+  },
+  {
+    "production_id": 360,
+    "date": "2026-03-19",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 180661
+  },
+  {
+    "production_id": 361,
+    "date": "2026-03-26",
+    "product_id": "P001",
+    "units_produced": 30,
+    "production_cost": 243908
+  },
+  {
+    "production_id": 362,
+    "date": "2026-03-26",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 19938
+  },
+  {
+    "production_id": 363,
+    "date": "2026-03-26",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 370915
+  },
+  {
+    "production_id": 364,
+    "date": "2026-03-26",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 261687
+  },
+  {
+    "production_id": 365,
+    "date": "2026-03-26",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 71575
+  },
+  {
+    "production_id": 366,
+    "date": "2026-03-26",
+    "product_id": "P006",
+    "units_produced": 30,
+    "production_cost": 143702
+  },
+  {
+    "production_id": 367,
+    "date": "2026-03-26",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 115103
+  },
+  {
+    "production_id": 368,
+    "date": "2026-03-26",
+    "product_id": "P008",
+    "units_produced": 20,
+    "production_cost": 48750
+  },
+  {
+    "production_id": 369,
+    "date": "2026-03-26",
+    "product_id": "P009",
+    "units_produced": 40,
+    "production_cost": 150418
+  },
+  {
+    "production_id": 370,
+    "date": "2026-03-26",
+    "product_id": "P010",
+    "units_produced": 10,
+    "production_cost": 76943
+  },
+  {
+    "production_id": 371,
+    "date": "2026-03-26",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 195170
+  },
+  {
+    "production_id": 372,
+    "date": "2026-03-26",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 95709
+  },
+  {
+    "production_id": 373,
+    "date": "2026-03-26",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 91421
+  },
+  {
+    "production_id": 374,
+    "date": "2026-03-26",
+    "product_id": "P014",
+    "units_produced": 20,
+    "production_cost": 134176
+  },
+  {
+    "production_id": 375,
+    "date": "2026-03-26",
+    "product_id": "P015",
+    "units_produced": 30,
+    "production_cost": 177164
+  },
+  {
+    "production_id": 376,
+    "date": "2026-03-26",
+    "product_id": "P016",
+    "units_produced": 10,
+    "production_cost": 63776
+  },
+  {
+    "production_id": 377,
+    "date": "2026-03-26",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 242043
+  },
+  {
+    "production_id": 378,
+    "date": "2026-03-26",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 408484
+  },
+  {
+    "production_id": 379,
+    "date": "2026-03-26",
+    "product_id": "P019",
+    "units_produced": 20,
+    "production_cost": 255911
+  },
+  {
+    "production_id": 380,
+    "date": "2026-03-26",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 289279
+  },
+  {
+    "production_id": 381,
+    "date": "2026-03-26",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 192166
+  },
+  {
+    "production_id": 382,
+    "date": "2026-03-26",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 108345
+  },
+  {
+    "production_id": 383,
+    "date": "2026-03-26",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 40245
+  },
+  {
+    "production_id": 384,
+    "date": "2026-03-26",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 130596
+  },
+  {
+    "production_id": 385,
+    "date": "2026-03-26",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 246453
+  },
+  {
+    "production_id": 386,
+    "date": "2026-03-26",
+    "product_id": "P026",
+    "units_produced": 20,
+    "production_cost": 103727
+  },
+  {
+    "production_id": 387,
+    "date": "2026-03-26",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 92088
+  },
+  {
+    "production_id": 388,
+    "date": "2026-03-26",
+    "product_id": "P028",
+    "units_produced": 40,
+    "production_cost": 262367
+  },
+  {
+    "production_id": 389,
+    "date": "2026-03-26",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 174389
+  },
+  {
+    "production_id": 390,
+    "date": "2026-03-26",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 140394
+  },
+  {
+    "production_id": 391,
+    "date": "2026-04-02",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 312212
+  },
+  {
+    "production_id": 392,
+    "date": "2026-04-02",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 38328
+  },
+  {
+    "production_id": 393,
+    "date": "2026-04-02",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 194206
+  },
+  {
+    "production_id": 394,
+    "date": "2026-04-02",
+    "product_id": "P004",
+    "units_produced": 40,
+    "production_cost": 337034
+  },
+  {
+    "production_id": 395,
+    "date": "2026-04-02",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 112455
+  },
+  {
+    "production_id": 396,
+    "date": "2026-04-02",
+    "product_id": "P006",
+    "units_produced": 10,
+    "production_cost": 51063
+  },
+  {
+    "production_id": 397,
+    "date": "2026-04-02",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 56759
+  },
+  {
+    "production_id": 398,
+    "date": "2026-04-02",
+    "product_id": "P008",
+    "units_produced": 20,
+    "production_cost": 48936
+  },
+  {
+    "production_id": 399,
+    "date": "2026-04-02",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 38131
+  },
+  {
+    "production_id": 400,
+    "date": "2026-04-02",
+    "product_id": "P010",
+    "units_produced": 10,
+    "production_cost": 76193
+  },
+  {
+    "production_id": 401,
+    "date": "2026-04-02",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 198480
+  },
+  {
+    "production_id": 402,
+    "date": "2026-04-02",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 88763
+  },
+  {
+    "production_id": 403,
+    "date": "2026-04-02",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 90672
+  },
+  {
+    "production_id": 404,
+    "date": "2026-04-02",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 226677
+  },
+  {
+    "production_id": 405,
+    "date": "2026-04-02",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 56745
+  },
+  {
+    "production_id": 406,
+    "date": "2026-04-02",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 190918
+  },
+  {
+    "production_id": 407,
+    "date": "2026-04-02",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 122642
+  },
+  {
+    "production_id": 408,
+    "date": "2026-04-02",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 282989
+  },
+  {
+    "production_id": 409,
+    "date": "2026-04-02",
+    "product_id": "P019",
+    "units_produced": 10,
+    "production_cost": 116415
+  },
+  {
+    "production_id": 410,
+    "date": "2026-04-02",
+    "product_id": "P020",
+    "units_produced": 40,
+    "production_cost": 388294
+  },
+  {
+    "production_id": 411,
+    "date": "2026-04-02",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 361946
+  },
+  {
+    "production_id": 412,
+    "date": "2026-04-02",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 471499
+  },
+  {
+    "production_id": 413,
+    "date": "2026-04-02",
+    "product_id": "P023",
+    "units_produced": 20,
+    "production_cost": 87969
+  },
+  {
+    "production_id": 414,
+    "date": "2026-04-02",
+    "product_id": "P024",
+    "units_produced": 20,
+    "production_cost": 83479
+  },
+  {
+    "production_id": 415,
+    "date": "2026-04-02",
+    "product_id": "P025",
+    "units_produced": 20,
+    "production_cost": 127487
+  },
+  {
+    "production_id": 416,
+    "date": "2026-04-02",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 163967
+  },
+  {
+    "production_id": 417,
+    "date": "2026-04-02",
+    "product_id": "P027",
+    "units_produced": 20,
+    "production_cost": 167803
+  },
+  {
+    "production_id": 418,
+    "date": "2026-04-02",
+    "product_id": "P028",
+    "units_produced": 20,
+    "production_cost": 125740
+  },
+  {
+    "production_id": 419,
+    "date": "2026-04-02",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 132425
+  },
+  {
+    "production_id": 420,
+    "date": "2026-04-02",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 171863
+  },
+  {
+    "production_id": 421,
+    "date": "2026-04-09",
+    "product_id": "P001",
+    "units_produced": 30,
+    "production_cost": 256439
+  },
+  {
+    "production_id": 422,
+    "date": "2026-04-09",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 40556
+  },
+  {
+    "production_id": 423,
+    "date": "2026-04-09",
+    "product_id": "P003",
+    "units_produced": 10,
+    "production_cost": 96427
+  },
+  {
+    "production_id": 424,
+    "date": "2026-04-09",
+    "product_id": "P004",
+    "units_produced": 40,
+    "production_cost": 355086
+  },
+  {
+    "production_id": 425,
+    "date": "2026-04-09",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 74916
+  },
+  {
+    "production_id": 426,
+    "date": "2026-04-09",
+    "product_id": "P006",
+    "units_produced": 20,
+    "production_cost": 103540
+  },
+  {
+    "production_id": 427,
+    "date": "2026-04-09",
+    "product_id": "P007",
+    "units_produced": 30,
+    "production_cost": 160894
+  },
+  {
+    "production_id": 428,
+    "date": "2026-04-09",
+    "product_id": "P008",
+    "units_produced": 30,
+    "production_cost": 71486
+  },
+  {
+    "production_id": 429,
+    "date": "2026-04-09",
+    "product_id": "P009",
+    "units_produced": 30,
+    "production_cost": 104046
+  },
+  {
+    "production_id": 430,
+    "date": "2026-04-09",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 284997
+  },
+  {
+    "production_id": 431,
+    "date": "2026-04-09",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 206623
+  },
+  {
+    "production_id": 432,
+    "date": "2026-04-09",
+    "product_id": "P012",
+    "units_produced": 10,
+    "production_cost": 48270
+  },
+  {
+    "production_id": 433,
+    "date": "2026-04-09",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 65491
+  },
+  {
+    "production_id": 434,
+    "date": "2026-04-09",
+    "product_id": "P014",
+    "units_produced": 20,
+    "production_cost": 136551
+  },
+  {
+    "production_id": 435,
+    "date": "2026-04-09",
+    "product_id": "P015",
+    "units_produced": 40,
+    "production_cost": 240344
+  },
+  {
+    "production_id": 436,
+    "date": "2026-04-09",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 136401
+  },
+  {
+    "production_id": 437,
+    "date": "2026-04-09",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 116774
+  },
+  {
+    "production_id": 438,
+    "date": "2026-04-09",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 145286
+  },
+  {
+    "production_id": 439,
+    "date": "2026-04-09",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 393604
+  },
+  {
+    "production_id": 440,
+    "date": "2026-04-09",
+    "product_id": "P020",
+    "units_produced": 40,
+    "production_cost": 384863
+  },
+  {
+    "production_id": 441,
+    "date": "2026-04-09",
+    "product_id": "P021",
+    "units_produced": 10,
+    "production_cost": 94380
+  },
+  {
+    "production_id": 442,
+    "date": "2026-04-09",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 419885
+  },
+  {
+    "production_id": 443,
+    "date": "2026-04-09",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 39827
+  },
+  {
+    "production_id": 444,
+    "date": "2026-04-09",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 124026
+  },
+  {
+    "production_id": 445,
+    "date": "2026-04-09",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 59624
+  },
+  {
+    "production_id": 446,
+    "date": "2026-04-09",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 158143
+  },
+  {
+    "production_id": 447,
+    "date": "2026-04-09",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 89288
+  },
+  {
+    "production_id": 448,
+    "date": "2026-04-09",
+    "product_id": "P028",
+    "units_produced": 40,
+    "production_cost": 235322
+  },
+  {
+    "production_id": 449,
+    "date": "2026-04-09",
+    "product_id": "P029",
+    "units_produced": 20,
+    "production_cost": 92631
+  },
+  {
+    "production_id": 450,
+    "date": "2026-04-09",
+    "product_id": "P030",
+    "units_produced": 10,
+    "production_cost": 44969
+  },
+  {
+    "production_id": 451,
+    "date": "2026-04-16",
+    "product_id": "P001",
+    "units_produced": 30,
+    "production_cost": 259026
+  },
+  {
+    "production_id": 452,
+    "date": "2026-04-16",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 20509
+  },
+  {
+    "production_id": 453,
+    "date": "2026-04-16",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 370097
+  },
+  {
+    "production_id": 454,
+    "date": "2026-04-16",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 245000
+  },
+  {
+    "production_id": 455,
+    "date": "2026-04-16",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 70928
+  },
+  {
+    "production_id": 456,
+    "date": "2026-04-16",
+    "product_id": "P006",
+    "units_produced": 20,
+    "production_cost": 102469
+  },
+  {
+    "production_id": 457,
+    "date": "2026-04-16",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 118160
+  },
+  {
+    "production_id": 458,
+    "date": "2026-04-16",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 98620
+  },
+  {
+    "production_id": 459,
+    "date": "2026-04-16",
+    "product_id": "P009",
+    "units_produced": 20,
+    "production_cost": 67757
+  },
+  {
+    "production_id": 460,
+    "date": "2026-04-16",
+    "product_id": "P010",
+    "units_produced": 30,
+    "production_cost": 210736
+  },
+  {
+    "production_id": 461,
+    "date": "2026-04-16",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 194865
+  },
+  {
+    "production_id": 462,
+    "date": "2026-04-16",
+    "product_id": "P012",
+    "units_produced": 30,
+    "production_cost": 135911
+  },
+  {
+    "production_id": 463,
+    "date": "2026-04-16",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 58536
+  },
+  {
+    "production_id": 464,
+    "date": "2026-04-16",
+    "product_id": "P014",
+    "units_produced": 40,
+    "production_cost": 301842
+  },
+  {
+    "production_id": 465,
+    "date": "2026-04-16",
+    "product_id": "P015",
+    "units_produced": 40,
+    "production_cost": 236801
+  },
+  {
+    "production_id": 466,
+    "date": "2026-04-16",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 190782
+  },
+  {
+    "production_id": 467,
+    "date": "2026-04-16",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 62212
+  },
+  {
+    "production_id": 468,
+    "date": "2026-04-16",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 441185
+  },
+  {
+    "production_id": 469,
+    "date": "2026-04-16",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 506972
+  },
+  {
+    "production_id": 470,
+    "date": "2026-04-16",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 101054
+  },
+  {
+    "production_id": 471,
+    "date": "2026-04-16",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 381345
+  },
+  {
+    "production_id": 472,
+    "date": "2026-04-16",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 106370
+  },
+  {
+    "production_id": 473,
+    "date": "2026-04-16",
+    "product_id": "P023",
+    "units_produced": 30,
+    "production_cost": 117180
+  },
+  {
+    "production_id": 474,
+    "date": "2026-04-16",
+    "product_id": "P024",
+    "units_produced": 20,
+    "production_cost": 81400
+  },
+  {
+    "production_id": 475,
+    "date": "2026-04-16",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 57480
+  },
+  {
+    "production_id": 476,
+    "date": "2026-04-16",
+    "product_id": "P026",
+    "units_produced": 20,
+    "production_cost": 101388
+  },
+  {
+    "production_id": 477,
+    "date": "2026-04-16",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 91991
+  },
+  {
+    "production_id": 478,
+    "date": "2026-04-16",
+    "product_id": "P028",
+    "units_produced": 40,
+    "production_cost": 261726
+  },
+  {
+    "production_id": 479,
+    "date": "2026-04-16",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 137477
+  },
+  {
+    "production_id": 480,
+    "date": "2026-04-16",
+    "product_id": "P030",
+    "units_produced": 10,
+    "production_cost": 46364
+  },
+  {
+    "production_id": 481,
+    "date": "2026-04-23",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 84848
+  },
+  {
+    "production_id": 482,
+    "date": "2026-04-23",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 79292
+  },
+  {
+    "production_id": 483,
+    "date": "2026-04-23",
+    "product_id": "P003",
+    "units_produced": 30,
+    "production_cost": 287694
+  },
+  {
+    "production_id": 484,
+    "date": "2026-04-23",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 183757
+  },
+  {
+    "production_id": 485,
+    "date": "2026-04-23",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 110468
+  },
+  {
+    "production_id": 486,
+    "date": "2026-04-23",
+    "product_id": "P006",
+    "units_produced": 20,
+    "production_cost": 99584
+  },
+  {
+    "production_id": 487,
+    "date": "2026-04-23",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 106685
+  },
+  {
+    "production_id": 488,
+    "date": "2026-04-23",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 96099
+  },
+  {
+    "production_id": 489,
+    "date": "2026-04-23",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 35639
+  },
+  {
+    "production_id": 490,
+    "date": "2026-04-23",
+    "product_id": "P010",
+    "units_produced": 30,
+    "production_cost": 209583
+  },
+  {
+    "production_id": 491,
+    "date": "2026-04-23",
+    "product_id": "P011",
+    "units_produced": 40,
+    "production_cost": 380304
+  },
+  {
+    "production_id": 492,
+    "date": "2026-04-23",
+    "product_id": "P012",
+    "units_produced": 30,
+    "production_cost": 135466
+  },
+  {
+    "production_id": 493,
+    "date": "2026-04-23",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 115282
+  },
+  {
+    "production_id": 494,
+    "date": "2026-04-23",
+    "product_id": "P014",
+    "units_produced": 10,
+    "production_cost": 75248
+  },
+  {
+    "production_id": 495,
+    "date": "2026-04-23",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 60185
+  },
+  {
+    "production_id": 496,
+    "date": "2026-04-23",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 134735
+  },
+  {
+    "production_id": 497,
+    "date": "2026-04-23",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 57951
+  },
+  {
+    "production_id": 498,
+    "date": "2026-04-23",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 279974
+  },
+  {
+    "production_id": 499,
+    "date": "2026-04-23",
+    "product_id": "P019",
+    "units_produced": 10,
+    "production_cost": 127690
+  },
+  {
+    "production_id": 500,
+    "date": "2026-04-23",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 108165
+  },
+  {
+    "production_id": 501,
+    "date": "2026-04-23",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 192313
+  },
+  {
+    "production_id": 502,
+    "date": "2026-04-23",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 109329
+  },
+  {
+    "production_id": 503,
+    "date": "2026-04-23",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 39875
+  },
+  {
+    "production_id": 504,
+    "date": "2026-04-23",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 153110
+  },
+  {
+    "production_id": 505,
+    "date": "2026-04-23",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 175656
+  },
+  {
+    "production_id": 506,
+    "date": "2026-04-23",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 47910
+  },
+  {
+    "production_id": 507,
+    "date": "2026-04-23",
+    "product_id": "P027",
+    "units_produced": 20,
+    "production_cost": 175766
+  },
+  {
+    "production_id": 508,
+    "date": "2026-04-23",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 189384
+  },
+  {
+    "production_id": 509,
+    "date": "2026-04-23",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 48864
+  },
+  {
+    "production_id": 510,
+    "date": "2026-04-23",
+    "product_id": "P030",
+    "units_produced": 20,
+    "production_cost": 85708
+  },
+  {
+    "production_id": 511,
+    "date": "2026-04-30",
+    "product_id": "P001",
+    "units_produced": 20,
+    "production_cost": 168300
+  },
+  {
+    "production_id": 512,
+    "date": "2026-04-30",
+    "product_id": "P002",
+    "units_produced": 40,
+    "production_cost": 86496
+  },
+  {
+    "production_id": 513,
+    "date": "2026-04-30",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 176812
+  },
+  {
+    "production_id": 514,
+    "date": "2026-04-30",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 245222
+  },
+  {
+    "production_id": 515,
+    "date": "2026-04-30",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 133793
+  },
+  {
+    "production_id": 516,
+    "date": "2026-04-30",
+    "product_id": "P006",
+    "units_produced": 10,
+    "production_cost": 54003
+  },
+  {
+    "production_id": 517,
+    "date": "2026-04-30",
+    "product_id": "P007",
+    "units_produced": 30,
+    "production_cost": 161554
+  },
+  {
+    "production_id": 518,
+    "date": "2026-04-30",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 106214
+  },
+  {
+    "production_id": 519,
+    "date": "2026-04-30",
+    "product_id": "P009",
+    "units_produced": 20,
+    "production_cost": 75945
+  },
+  {
+    "production_id": 520,
+    "date": "2026-04-30",
+    "product_id": "P010",
+    "units_produced": 10,
+    "production_cost": 66958
+  },
+  {
+    "production_id": 521,
+    "date": "2026-04-30",
+    "product_id": "P011",
+    "units_produced": 30,
+    "production_cost": 324008
+  },
+  {
+    "production_id": 522,
+    "date": "2026-04-30",
+    "product_id": "P012",
+    "units_produced": 40,
+    "production_cost": 183853
+  },
+  {
+    "production_id": 523,
+    "date": "2026-04-30",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 58327
+  },
+  {
+    "production_id": 524,
+    "date": "2026-04-30",
+    "product_id": "P014",
+    "units_produced": 20,
+    "production_cost": 151983
+  },
+  {
+    "production_id": 525,
+    "date": "2026-04-30",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 106251
+  },
+  {
+    "production_id": 526,
+    "date": "2026-04-30",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 280603
+  },
+  {
+    "production_id": 527,
+    "date": "2026-04-30",
+    "product_id": "P017",
+    "units_produced": 30,
+    "production_cost": 189203
+  },
+  {
+    "production_id": 528,
+    "date": "2026-04-30",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 145539
+  },
+  {
+    "production_id": 529,
+    "date": "2026-04-30",
+    "product_id": "P019",
+    "units_produced": 40,
+    "production_cost": 502859
+  },
+  {
+    "production_id": 530,
+    "date": "2026-04-30",
+    "product_id": "P020",
+    "units_produced": 40,
+    "production_cost": 437685
+  },
+  {
+    "production_id": 531,
+    "date": "2026-04-30",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 186805
+  },
+  {
+    "production_id": 532,
+    "date": "2026-04-30",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 119252
+  },
+  {
+    "production_id": 533,
+    "date": "2026-04-30",
+    "product_id": "P023",
+    "units_produced": 30,
+    "production_cost": 119763
+  },
+  {
+    "production_id": 534,
+    "date": "2026-04-30",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 118728
+  },
+  {
+    "production_id": 535,
+    "date": "2026-04-30",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 250136
+  },
+  {
+    "production_id": 536,
+    "date": "2026-04-30",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 217924
+  },
+  {
+    "production_id": 537,
+    "date": "2026-04-30",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 354306
+  },
+  {
+    "production_id": 538,
+    "date": "2026-04-30",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 178113
+  },
+  {
+    "production_id": 539,
+    "date": "2026-04-30",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 181342
+  },
+  {
+    "production_id": 540,
+    "date": "2026-04-30",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 181450
+  },
+  {
+    "production_id": 541,
+    "date": "2026-05-07",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 339884
+  },
+  {
+    "production_id": 542,
+    "date": "2026-05-07",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 21823
+  },
+  {
+    "production_id": 543,
+    "date": "2026-05-07",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 172617
+  },
+  {
+    "production_id": 544,
+    "date": "2026-05-07",
+    "product_id": "P004",
+    "units_produced": 10,
+    "production_cost": 83308
+  },
+  {
+    "production_id": 545,
+    "date": "2026-05-07",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 111764
+  },
+  {
+    "production_id": 546,
+    "date": "2026-05-07",
+    "product_id": "P006",
+    "units_produced": 10,
+    "production_cost": 47535
+  },
+  {
+    "production_id": 547,
+    "date": "2026-05-07",
+    "product_id": "P007",
+    "units_produced": 40,
+    "production_cost": 232797
+  },
+  {
+    "production_id": 548,
+    "date": "2026-05-07",
+    "product_id": "P008",
+    "units_produced": 20,
+    "production_cost": 53050
+  },
+  {
+    "production_id": 549,
+    "date": "2026-05-07",
+    "product_id": "P009",
+    "units_produced": 20,
+    "production_cost": 71331
+  },
+  {
+    "production_id": 550,
+    "date": "2026-05-07",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 138784
+  },
+  {
+    "production_id": 551,
+    "date": "2026-05-07",
+    "product_id": "P011",
+    "units_produced": 10,
+    "production_cost": 109761
+  },
+  {
+    "production_id": 552,
+    "date": "2026-05-07",
+    "product_id": "P012",
+    "units_produced": 40,
+    "production_cost": 188620
+  },
+  {
+    "production_id": 553,
+    "date": "2026-05-07",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 115863
+  },
+  {
+    "production_id": 554,
+    "date": "2026-05-07",
+    "product_id": "P014",
+    "units_produced": 20,
+    "production_cost": 141293
+  },
+  {
+    "production_id": 555,
+    "date": "2026-05-07",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 57552
+  },
+  {
+    "production_id": 556,
+    "date": "2026-05-07",
+    "product_id": "P016",
+    "units_produced": 10,
+    "production_cost": 62298
+  },
+  {
+    "production_id": 557,
+    "date": "2026-05-07",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 238730
+  },
+  {
+    "production_id": 558,
+    "date": "2026-05-07",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 284218
+  },
+  {
+    "production_id": 559,
+    "date": "2026-05-07",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 352535
+  },
+  {
+    "production_id": 560,
+    "date": "2026-05-07",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 324769
+  },
+  {
+    "production_id": 561,
+    "date": "2026-05-07",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 387682
+  },
+  {
+    "production_id": 562,
+    "date": "2026-05-07",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 472927
+  },
+  {
+    "production_id": 563,
+    "date": "2026-05-07",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 43085
+  },
+  {
+    "production_id": 564,
+    "date": "2026-05-07",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 42535
+  },
+  {
+    "production_id": 565,
+    "date": "2026-05-07",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 254626
+  },
+  {
+    "production_id": 566,
+    "date": "2026-05-07",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 193289
+  },
+  {
+    "production_id": 567,
+    "date": "2026-05-07",
+    "product_id": "P027",
+    "units_produced": 40,
+    "production_cost": 352435
+  },
+  {
+    "production_id": 568,
+    "date": "2026-05-07",
+    "product_id": "P028",
+    "units_produced": 40,
+    "production_cost": 256823
+  },
+  {
+    "production_id": 569,
+    "date": "2026-05-07",
+    "product_id": "P029",
+    "units_produced": 20,
+    "production_cost": 91050
+  },
+  {
+    "production_id": 570,
+    "date": "2026-05-07",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 181493
+  },
+  {
+    "production_id": 571,
+    "date": "2026-05-14",
+    "product_id": "P001",
+    "units_produced": 30,
+    "production_cost": 242684
+  },
+  {
+    "production_id": 572,
+    "date": "2026-05-14",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 43103
+  },
+  {
+    "production_id": 573,
+    "date": "2026-05-14",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 353531
+  },
+  {
+    "production_id": 574,
+    "date": "2026-05-14",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 257276
+  },
+  {
+    "production_id": 575,
+    "date": "2026-05-14",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 134099
+  },
+  {
+    "production_id": 576,
+    "date": "2026-05-14",
+    "product_id": "P006",
+    "units_produced": 30,
+    "production_cost": 155242
+  },
+  {
+    "production_id": 577,
+    "date": "2026-05-14",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 59138
+  },
+  {
+    "production_id": 578,
+    "date": "2026-05-14",
+    "product_id": "P008",
+    "units_produced": 20,
+    "production_cost": 54696
+  },
+  {
+    "production_id": 579,
+    "date": "2026-05-14",
+    "product_id": "P009",
+    "units_produced": 30,
+    "production_cost": 107943
+  },
+  {
+    "production_id": 580,
+    "date": "2026-05-14",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 133192
+  },
+  {
+    "production_id": 581,
+    "date": "2026-05-14",
+    "product_id": "P011",
+    "units_produced": 10,
+    "production_cost": 96894
+  },
+  {
+    "production_id": 582,
+    "date": "2026-05-14",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 88342
+  },
+  {
+    "production_id": 583,
+    "date": "2026-05-14",
+    "product_id": "P013",
+    "units_produced": 10,
+    "production_cost": 31716
+  },
+  {
+    "production_id": 584,
+    "date": "2026-05-14",
+    "product_id": "P014",
+    "units_produced": 10,
+    "production_cost": 67030
+  },
+  {
+    "production_id": 585,
+    "date": "2026-05-14",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 120641
+  },
+  {
+    "production_id": 586,
+    "date": "2026-05-14",
+    "product_id": "P016",
+    "units_produced": 10,
+    "production_cost": 65185
+  },
+  {
+    "production_id": 587,
+    "date": "2026-05-14",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 124875
+  },
+  {
+    "production_id": 588,
+    "date": "2026-05-14",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 138337
+  },
+  {
+    "production_id": 589,
+    "date": "2026-05-14",
+    "product_id": "P019",
+    "units_produced": 20,
+    "production_cost": 243737
+  },
+  {
+    "production_id": 590,
+    "date": "2026-05-14",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 289921
+  },
+  {
+    "production_id": 591,
+    "date": "2026-05-14",
+    "product_id": "P021",
+    "units_produced": 20,
+    "production_cost": 178005
+  },
+  {
+    "production_id": 592,
+    "date": "2026-05-14",
+    "product_id": "P022",
+    "units_produced": 10,
+    "production_cost": 118040
+  },
+  {
+    "production_id": 593,
+    "date": "2026-05-14",
+    "product_id": "P023",
+    "units_produced": 30,
+    "production_cost": 125246
+  },
+  {
+    "production_id": 594,
+    "date": "2026-05-14",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 41087
+  },
+  {
+    "production_id": 595,
+    "date": "2026-05-14",
+    "product_id": "P025",
+    "units_produced": 20,
+    "production_cost": 127825
+  },
+  {
+    "production_id": 596,
+    "date": "2026-05-14",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 217091
+  },
+  {
+    "production_id": 597,
+    "date": "2026-05-14",
+    "product_id": "P027",
+    "units_produced": 30,
+    "production_cost": 269534
+  },
+  {
+    "production_id": 598,
+    "date": "2026-05-14",
+    "product_id": "P028",
+    "units_produced": 10,
+    "production_cost": 65877
+  },
+  {
+    "production_id": 599,
+    "date": "2026-05-14",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 137150
+  },
+  {
+    "production_id": 600,
+    "date": "2026-05-14",
+    "product_id": "P030",
+    "units_produced": 20,
+    "production_cost": 86229
+  },
+  {
+    "production_id": 601,
+    "date": "2026-05-21",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 77370
+  },
+  {
+    "production_id": 602,
+    "date": "2026-05-21",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 40461
+  },
+  {
+    "production_id": 603,
+    "date": "2026-05-21",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 393958
+  },
+  {
+    "production_id": 604,
+    "date": "2026-05-21",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 169313
+  },
+  {
+    "production_id": 605,
+    "date": "2026-05-21",
+    "product_id": "P005",
+    "units_produced": 10,
+    "production_cost": 34688
+  },
+  {
+    "production_id": 606,
+    "date": "2026-05-21",
+    "product_id": "P006",
+    "units_produced": 10,
+    "production_cost": 54116
+  },
+  {
+    "production_id": 607,
+    "date": "2026-05-21",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 112297
+  },
+  {
+    "production_id": 608,
+    "date": "2026-05-21",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 26376
+  },
+  {
+    "production_id": 609,
+    "date": "2026-05-21",
+    "product_id": "P009",
+    "units_produced": 40,
+    "production_cost": 142168
+  },
+  {
+    "production_id": 610,
+    "date": "2026-05-21",
+    "product_id": "P010",
+    "units_produced": 10,
+    "production_cost": 76981
+  },
+  {
+    "production_id": 611,
+    "date": "2026-05-21",
+    "product_id": "P011",
+    "units_produced": 30,
+    "production_cost": 314529
+  },
+  {
+    "production_id": 612,
+    "date": "2026-05-21",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 89883
+  },
+  {
+    "production_id": 613,
+    "date": "2026-05-21",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 114203
+  },
+  {
+    "production_id": 614,
+    "date": "2026-05-21",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 230465
+  },
+  {
+    "production_id": 615,
+    "date": "2026-05-21",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 57638
+  },
+  {
+    "production_id": 616,
+    "date": "2026-05-21",
+    "product_id": "P016",
+    "units_produced": 20,
+    "production_cost": 138779
+  },
+  {
+    "production_id": 617,
+    "date": "2026-05-21",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 59367
+  },
+  {
+    "production_id": 618,
+    "date": "2026-05-21",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 139401
+  },
+  {
+    "production_id": 619,
+    "date": "2026-05-21",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 378556
+  },
+  {
+    "production_id": 620,
+    "date": "2026-05-21",
+    "product_id": "P020",
+    "units_produced": 20,
+    "production_cost": 210801
+  },
+  {
+    "production_id": 621,
+    "date": "2026-05-21",
+    "product_id": "P021",
+    "units_produced": 30,
+    "production_cost": 272058
+  },
+  {
+    "production_id": 622,
+    "date": "2026-05-21",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 212103
+  },
+  {
+    "production_id": 623,
+    "date": "2026-05-21",
+    "product_id": "P023",
+    "units_produced": 20,
+    "production_cost": 85668
+  },
+  {
+    "production_id": 624,
+    "date": "2026-05-21",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 163604
+  },
+  {
+    "production_id": 625,
+    "date": "2026-05-21",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 175573
+  },
+  {
+    "production_id": 626,
+    "date": "2026-05-21",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 191643
+  },
+  {
+    "production_id": 627,
+    "date": "2026-05-21",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 93277
+  },
+  {
+    "production_id": 628,
+    "date": "2026-05-21",
+    "product_id": "P028",
+    "units_produced": 10,
+    "production_cost": 59865
+  },
+  {
+    "production_id": 629,
+    "date": "2026-05-21",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 130917
+  },
+  {
+    "production_id": 630,
+    "date": "2026-05-21",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 130149
+  },
+  {
+    "production_id": 631,
+    "date": "2026-05-28",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 318606
+  },
+  {
+    "production_id": 632,
+    "date": "2026-05-28",
+    "product_id": "P002",
+    "units_produced": 20,
+    "production_cost": 39821
+  },
+  {
+    "production_id": 633,
+    "date": "2026-05-28",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 392303
+  },
+  {
+    "production_id": 634,
+    "date": "2026-05-28",
+    "product_id": "P004",
+    "units_produced": 10,
+    "production_cost": 92964
+  },
+  {
+    "production_id": 635,
+    "date": "2026-05-28",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 75440
+  },
+  {
+    "production_id": 636,
+    "date": "2026-05-28",
+    "product_id": "P006",
+    "units_produced": 20,
+    "production_cost": 98430
+  },
+  {
+    "production_id": 637,
+    "date": "2026-05-28",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 55792
+  },
+  {
+    "production_id": 638,
+    "date": "2026-05-28",
+    "product_id": "P008",
+    "units_produced": 30,
+    "production_cost": 76800
+  },
+  {
+    "production_id": 639,
+    "date": "2026-05-28",
+    "product_id": "P009",
+    "units_produced": 10,
+    "production_cost": 33937
+  },
+  {
+    "production_id": 640,
+    "date": "2026-05-28",
+    "product_id": "P010",
+    "units_produced": 30,
+    "production_cost": 218822
+  },
+  {
+    "production_id": 641,
+    "date": "2026-05-28",
+    "product_id": "P011",
+    "units_produced": 10,
+    "production_cost": 106620
+  },
+  {
+    "production_id": 642,
+    "date": "2026-05-28",
+    "product_id": "P012",
+    "units_produced": 40,
+    "production_cost": 182058
+  },
+  {
+    "production_id": 643,
+    "date": "2026-05-28",
+    "product_id": "P013",
+    "units_produced": 30,
+    "production_cost": 98272
+  },
+  {
+    "production_id": 644,
+    "date": "2026-05-28",
+    "product_id": "P014",
+    "units_produced": 10,
+    "production_cost": 71167
+  },
+  {
+    "production_id": 645,
+    "date": "2026-05-28",
+    "product_id": "P015",
+    "units_produced": 30,
+    "production_cost": 165761
+  },
+  {
+    "production_id": 646,
+    "date": "2026-05-28",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 257471
+  },
+  {
+    "production_id": 647,
+    "date": "2026-05-28",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 246983
+  },
+  {
+    "production_id": 648,
+    "date": "2026-05-28",
+    "product_id": "P018",
+    "units_produced": 40,
+    "production_cost": 577646
+  },
+  {
+    "production_id": 649,
+    "date": "2026-05-28",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 389052
+  },
+  {
+    "production_id": 650,
+    "date": "2026-05-28",
+    "product_id": "P020",
+    "units_produced": 30,
+    "production_cost": 310626
+  },
+  {
+    "production_id": 651,
+    "date": "2026-05-28",
+    "product_id": "P021",
+    "units_produced": 10,
+    "production_cost": 88531
+  },
+  {
+    "production_id": 652,
+    "date": "2026-05-28",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 453791
+  },
+  {
+    "production_id": 653,
+    "date": "2026-05-28",
+    "product_id": "P023",
+    "units_produced": 20,
+    "production_cost": 79758
+  },
+  {
+    "production_id": 654,
+    "date": "2026-05-28",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 166203
+  },
+  {
+    "production_id": 655,
+    "date": "2026-05-28",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 239024
+  },
+  {
+    "production_id": 656,
+    "date": "2026-05-28",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 152052
+  },
+  {
+    "production_id": 657,
+    "date": "2026-05-28",
+    "product_id": "P027",
+    "units_produced": 20,
+    "production_cost": 168704
+  },
+  {
+    "production_id": 658,
+    "date": "2026-05-28",
+    "product_id": "P028",
+    "units_produced": 10,
+    "production_cost": 57962
+  },
+  {
+    "production_id": 659,
+    "date": "2026-05-28",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 193159
+  },
+  {
+    "production_id": 660,
+    "date": "2026-05-28",
+    "product_id": "P030",
+    "units_produced": 40,
+    "production_cost": 194971
+  },
+  {
+    "production_id": 661,
+    "date": "2026-06-04",
+    "product_id": "P001",
+    "units_produced": 30,
+    "production_cost": 234271
+  },
+  {
+    "production_id": 662,
+    "date": "2026-06-04",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 19319
+  },
+  {
+    "production_id": 663,
+    "date": "2026-06-04",
+    "product_id": "P003",
+    "units_produced": 10,
+    "production_cost": 90732
+  },
+  {
+    "production_id": 664,
+    "date": "2026-06-04",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 258602
+  },
+  {
+    "production_id": 665,
+    "date": "2026-06-04",
+    "product_id": "P005",
+    "units_produced": 20,
+    "production_cost": 75985
+  },
+  {
+    "production_id": 666,
+    "date": "2026-06-04",
+    "product_id": "P006",
+    "units_produced": 30,
+    "production_cost": 164400
+  },
+  {
+    "production_id": 667,
+    "date": "2026-06-04",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 58889
+  },
+  {
+    "production_id": 668,
+    "date": "2026-06-04",
+    "product_id": "P008",
+    "units_produced": 30,
+    "production_cost": 79492
+  },
+  {
+    "production_id": 669,
+    "date": "2026-06-04",
+    "product_id": "P009",
+    "units_produced": 30,
+    "production_cost": 105070
+  },
+  {
+    "production_id": 670,
+    "date": "2026-06-04",
+    "product_id": "P010",
+    "units_produced": 40,
+    "production_cost": 279135
+  },
+  {
+    "production_id": 671,
+    "date": "2026-06-04",
+    "product_id": "P011",
+    "units_produced": 40,
+    "production_cost": 382784
+  },
+  {
+    "production_id": 672,
+    "date": "2026-06-04",
+    "product_id": "P012",
+    "units_produced": 10,
+    "production_cost": 44874
+  },
+  {
+    "production_id": 673,
+    "date": "2026-06-04",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 60948
+  },
+  {
+    "production_id": 674,
+    "date": "2026-06-04",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 209762
+  },
+  {
+    "production_id": 675,
+    "date": "2026-06-04",
+    "product_id": "P015",
+    "units_produced": 20,
+    "production_cost": 117726
+  },
+  {
+    "production_id": 676,
+    "date": "2026-06-04",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 213346
+  },
+  {
+    "production_id": 677,
+    "date": "2026-06-04",
+    "product_id": "P017",
+    "units_produced": 40,
+    "production_cost": 237035
+  },
+  {
+    "production_id": 678,
+    "date": "2026-06-04",
+    "product_id": "P018",
+    "units_produced": 40,
+    "production_cost": 557104
+  },
+  {
+    "production_id": 679,
+    "date": "2026-06-04",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 357699
+  },
+  {
+    "production_id": 680,
+    "date": "2026-06-04",
+    "product_id": "P020",
+    "units_produced": 20,
+    "production_cost": 196381
+  },
+  {
+    "production_id": 681,
+    "date": "2026-06-04",
+    "product_id": "P021",
+    "units_produced": 30,
+    "production_cost": 274974
+  },
+  {
+    "production_id": 682,
+    "date": "2026-06-04",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 232321
+  },
+  {
+    "production_id": 683,
+    "date": "2026-06-04",
+    "product_id": "P023",
+    "units_produced": 30,
+    "production_cost": 129987
+  },
+  {
+    "production_id": 684,
+    "date": "2026-06-04",
+    "product_id": "P024",
+    "units_produced": 40,
+    "production_cost": 152481
+  },
+  {
+    "production_id": 685,
+    "date": "2026-06-04",
+    "product_id": "P025",
+    "units_produced": 10,
+    "production_cost": 62125
+  },
+  {
+    "production_id": 686,
+    "date": "2026-06-04",
+    "product_id": "P026",
+    "units_produced": 30,
+    "production_cost": 152910
+  },
+  {
+    "production_id": 687,
+    "date": "2026-06-04",
+    "product_id": "P027",
+    "units_produced": 30,
+    "production_cost": 274395
+  },
+  {
+    "production_id": 688,
+    "date": "2026-06-04",
+    "product_id": "P028",
+    "units_produced": 40,
+    "production_cost": 236914
+  },
+  {
+    "production_id": 689,
+    "date": "2026-06-04",
+    "product_id": "P029",
+    "units_produced": 40,
+    "production_cost": 177168
+  },
+  {
+    "production_id": 690,
+    "date": "2026-06-04",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 138256
+  },
+  {
+    "production_id": 691,
+    "date": "2026-06-11",
+    "product_id": "P001",
+    "units_produced": 40,
+    "production_cost": 325580
+  },
+  {
+    "production_id": 692,
+    "date": "2026-06-11",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 20402
+  },
+  {
+    "production_id": 693,
+    "date": "2026-06-11",
+    "product_id": "P003",
+    "units_produced": 40,
+    "production_cost": 391600
+  },
+  {
+    "production_id": 694,
+    "date": "2026-06-11",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 265965
+  },
+  {
+    "production_id": 695,
+    "date": "2026-06-11",
+    "product_id": "P005",
+    "units_produced": 40,
+    "production_cost": 153534
+  },
+  {
+    "production_id": 696,
+    "date": "2026-06-11",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 212581
+  },
+  {
+    "production_id": 697,
+    "date": "2026-06-11",
+    "product_id": "P007",
+    "units_produced": 20,
+    "production_cost": 105012
+  },
+  {
+    "production_id": 698,
+    "date": "2026-06-11",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 100752
+  },
+  {
+    "production_id": 699,
+    "date": "2026-06-11",
+    "product_id": "P009",
+    "units_produced": 40,
+    "production_cost": 143448
+  },
+  {
+    "production_id": 700,
+    "date": "2026-06-11",
+    "product_id": "P010",
+    "units_produced": 30,
+    "production_cost": 200388
+  },
+  {
+    "production_id": 701,
+    "date": "2026-06-11",
+    "product_id": "P011",
+    "units_produced": 10,
+    "production_cost": 105799
+  },
+  {
+    "production_id": 702,
+    "date": "2026-06-11",
+    "product_id": "P012",
+    "units_produced": 40,
+    "production_cost": 177158
+  },
+  {
+    "production_id": 703,
+    "date": "2026-06-11",
+    "product_id": "P013",
+    "units_produced": 40,
+    "production_cost": 119440
+  },
+  {
+    "production_id": 704,
+    "date": "2026-06-11",
+    "product_id": "P014",
+    "units_produced": 10,
+    "production_cost": 73534
+  },
+  {
+    "production_id": 705,
+    "date": "2026-06-11",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 55800
+  },
+  {
+    "production_id": 706,
+    "date": "2026-06-11",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 212863
+  },
+  {
+    "production_id": 707,
+    "date": "2026-06-11",
+    "product_id": "P017",
+    "units_produced": 30,
+    "production_cost": 173408
+  },
+  {
+    "production_id": 708,
+    "date": "2026-06-11",
+    "product_id": "P018",
+    "units_produced": 10,
+    "production_cost": 134804
+  },
+  {
+    "production_id": 709,
+    "date": "2026-06-11",
+    "product_id": "P019",
+    "units_produced": 30,
+    "production_cost": 363854
+  },
+  {
+    "production_id": 710,
+    "date": "2026-06-11",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 96088
+  },
+  {
+    "production_id": 711,
+    "date": "2026-06-11",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 379869
+  },
+  {
+    "production_id": 712,
+    "date": "2026-06-11",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 418551
+  },
+  {
+    "production_id": 713,
+    "date": "2026-06-11",
+    "product_id": "P023",
+    "units_produced": 40,
+    "production_cost": 161532
+  },
+  {
+    "production_id": 714,
+    "date": "2026-06-11",
+    "product_id": "P024",
+    "units_produced": 30,
+    "production_cost": 115318
+  },
+  {
+    "production_id": 715,
+    "date": "2026-06-11",
+    "product_id": "P025",
+    "units_produced": 40,
+    "production_cost": 259719
+  },
+  {
+    "production_id": 716,
+    "date": "2026-06-11",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 205823
+  },
+  {
+    "production_id": 717,
+    "date": "2026-06-11",
+    "product_id": "P027",
+    "units_produced": 10,
+    "production_cost": 89917
+  },
+  {
+    "production_id": 718,
+    "date": "2026-06-11",
+    "product_id": "P028",
+    "units_produced": 20,
+    "production_cost": 118625
+  },
+  {
+    "production_id": 719,
+    "date": "2026-06-11",
+    "product_id": "P029",
+    "units_produced": 20,
+    "production_cost": 92169
+  },
+  {
+    "production_id": 720,
+    "date": "2026-06-11",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 132503
+  },
+  {
+    "production_id": 721,
+    "date": "2026-06-18",
+    "product_id": "P001",
+    "units_produced": 10,
+    "production_cost": 78130
+  },
+  {
+    "production_id": 722,
+    "date": "2026-06-18",
+    "product_id": "P002",
+    "units_produced": 10,
+    "production_cost": 19763
+  },
+  {
+    "production_id": 723,
+    "date": "2026-06-18",
+    "product_id": "P003",
+    "units_produced": 20,
+    "production_cost": 180809
+  },
+  {
+    "production_id": 724,
+    "date": "2026-06-18",
+    "product_id": "P004",
+    "units_produced": 20,
+    "production_cost": 169879
+  },
+  {
+    "production_id": 725,
+    "date": "2026-06-18",
+    "product_id": "P005",
+    "units_produced": 30,
+    "production_cost": 114350
+  },
+  {
+    "production_id": 726,
+    "date": "2026-06-18",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 217250
+  },
+  {
+    "production_id": 727,
+    "date": "2026-06-18",
+    "product_id": "P007",
+    "units_produced": 40,
+    "production_cost": 235472
+  },
+  {
+    "production_id": 728,
+    "date": "2026-06-18",
+    "product_id": "P008",
+    "units_produced": 40,
+    "production_cost": 95141
+  },
+  {
+    "production_id": 729,
+    "date": "2026-06-18",
+    "product_id": "P009",
+    "units_produced": 30,
+    "production_cost": 114310
+  },
+  {
+    "production_id": 730,
+    "date": "2026-06-18",
+    "product_id": "P010",
+    "units_produced": 20,
+    "production_cost": 144088
+  },
+  {
+    "production_id": 731,
+    "date": "2026-06-18",
+    "product_id": "P011",
+    "units_produced": 40,
+    "production_cost": 433472
+  },
+  {
+    "production_id": 732,
+    "date": "2026-06-18",
+    "product_id": "P012",
+    "units_produced": 30,
+    "production_cost": 137795
+  },
+  {
+    "production_id": 733,
+    "date": "2026-06-18",
+    "product_id": "P013",
+    "units_produced": 20,
+    "production_cost": 59296
+  },
+  {
+    "production_id": 734,
+    "date": "2026-06-18",
+    "product_id": "P014",
+    "units_produced": 10,
+    "production_cost": 69931
+  },
+  {
+    "production_id": 735,
+    "date": "2026-06-18",
+    "product_id": "P015",
+    "units_produced": 40,
+    "production_cost": 221326
+  },
+  {
+    "production_id": 736,
+    "date": "2026-06-18",
+    "product_id": "P016",
+    "units_produced": 40,
+    "production_cost": 279358
+  },
+  {
+    "production_id": 737,
+    "date": "2026-06-18",
+    "product_id": "P017",
+    "units_produced": 10,
+    "production_cost": 61516
+  },
+  {
+    "production_id": 738,
+    "date": "2026-06-18",
+    "product_id": "P018",
+    "units_produced": 20,
+    "production_cost": 291882
+  },
+  {
+    "production_id": 739,
+    "date": "2026-06-18",
+    "product_id": "P019",
+    "units_produced": 10,
+    "production_cost": 119768
+  },
+  {
+    "production_id": 740,
+    "date": "2026-06-18",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 108006
+  },
+  {
+    "production_id": 741,
+    "date": "2026-06-18",
+    "product_id": "P021",
+    "units_produced": 30,
+    "production_cost": 264427
+  },
+  {
+    "production_id": 742,
+    "date": "2026-06-18",
+    "product_id": "P022",
+    "units_produced": 20,
+    "production_cost": 216384
+  },
+  {
+    "production_id": 743,
+    "date": "2026-06-18",
+    "product_id": "P023",
+    "units_produced": 30,
+    "production_cost": 114703
+  },
+  {
+    "production_id": 744,
+    "date": "2026-06-18",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 42871
+  },
+  {
+    "production_id": 745,
+    "date": "2026-06-18",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 194826
+  },
+  {
+    "production_id": 746,
+    "date": "2026-06-18",
+    "product_id": "P026",
+    "units_produced": 40,
+    "production_cost": 218787
+  },
+  {
+    "production_id": 747,
+    "date": "2026-06-18",
+    "product_id": "P027",
+    "units_produced": 20,
+    "production_cost": 173484
+  },
+  {
+    "production_id": 748,
+    "date": "2026-06-18",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 177459
+  },
+  {
+    "production_id": 749,
+    "date": "2026-06-18",
+    "product_id": "P029",
+    "units_produced": 30,
+    "production_cost": 146733
+  },
+  {
+    "production_id": 750,
+    "date": "2026-06-18",
+    "product_id": "P030",
+    "units_produced": 30,
+    "production_cost": 147385
+  },
+  {
+    "production_id": 751,
+    "date": "2026-06-25",
+    "product_id": "P001",
+    "units_produced": 20,
+    "production_cost": 175980
+  },
+  {
+    "production_id": 752,
+    "date": "2026-06-25",
+    "product_id": "P002",
+    "units_produced": 30,
+    "production_cost": 59815
+  },
+  {
+    "production_id": 753,
+    "date": "2026-06-25",
+    "product_id": "P003",
+    "units_produced": 30,
+    "production_cost": 271348
+  },
+  {
+    "production_id": 754,
+    "date": "2026-06-25",
+    "product_id": "P004",
+    "units_produced": 30,
+    "production_cost": 258876
+  },
+  {
+    "production_id": 755,
+    "date": "2026-06-25",
+    "product_id": "P005",
+    "units_produced": 10,
+    "production_cost": 34782
+  },
+  {
+    "production_id": 756,
+    "date": "2026-06-25",
+    "product_id": "P006",
+    "units_produced": 40,
+    "production_cost": 190212
+  },
+  {
+    "production_id": 757,
+    "date": "2026-06-25",
+    "product_id": "P007",
+    "units_produced": 10,
+    "production_cost": 54229
+  },
+  {
+    "production_id": 758,
+    "date": "2026-06-25",
+    "product_id": "P008",
+    "units_produced": 10,
+    "production_cost": 24816
+  },
+  {
+    "production_id": 759,
+    "date": "2026-06-25",
+    "product_id": "P009",
+    "units_produced": 30,
+    "production_cost": 105499
+  },
+  {
+    "production_id": 760,
+    "date": "2026-06-25",
+    "product_id": "P010",
+    "units_produced": 10,
+    "production_cost": 70867
+  },
+  {
+    "production_id": 761,
+    "date": "2026-06-25",
+    "product_id": "P011",
+    "units_produced": 20,
+    "production_cost": 203291
+  },
+  {
+    "production_id": 762,
+    "date": "2026-06-25",
+    "product_id": "P012",
+    "units_produced": 20,
+    "production_cost": 90628
+  },
+  {
+    "production_id": 763,
+    "date": "2026-06-25",
+    "product_id": "P013",
+    "units_produced": 10,
+    "production_cost": 32366
+  },
+  {
+    "production_id": 764,
+    "date": "2026-06-25",
+    "product_id": "P014",
+    "units_produced": 30,
+    "production_cost": 201996
+  },
+  {
+    "production_id": 765,
+    "date": "2026-06-25",
+    "product_id": "P015",
+    "units_produced": 10,
+    "production_cost": 52584
+  },
+  {
+    "production_id": 766,
+    "date": "2026-06-25",
+    "product_id": "P016",
+    "units_produced": 30,
+    "production_cost": 199562
+  },
+  {
+    "production_id": 767,
+    "date": "2026-06-25",
+    "product_id": "P017",
+    "units_produced": 20,
+    "production_cost": 131767
+  },
+  {
+    "production_id": 768,
+    "date": "2026-06-25",
+    "product_id": "P018",
+    "units_produced": 30,
+    "production_cost": 442474
+  },
+  {
+    "production_id": 769,
+    "date": "2026-06-25",
+    "product_id": "P019",
+    "units_produced": 20,
+    "production_cost": 245260
+  },
+  {
+    "production_id": 770,
+    "date": "2026-06-25",
+    "product_id": "P020",
+    "units_produced": 10,
+    "production_cost": 105031
+  },
+  {
+    "production_id": 771,
+    "date": "2026-06-25",
+    "product_id": "P021",
+    "units_produced": 40,
+    "production_cost": 363851
+  },
+  {
+    "production_id": 772,
+    "date": "2026-06-25",
+    "product_id": "P022",
+    "units_produced": 40,
+    "production_cost": 465149
+  },
+  {
+    "production_id": 773,
+    "date": "2026-06-25",
+    "product_id": "P023",
+    "units_produced": 10,
+    "production_cost": 39923
+  },
+  {
+    "production_id": 774,
+    "date": "2026-06-25",
+    "product_id": "P024",
+    "units_produced": 10,
+    "production_cost": 42519
+  },
+  {
+    "production_id": 775,
+    "date": "2026-06-25",
+    "product_id": "P025",
+    "units_produced": 30,
+    "production_cost": 196271
+  },
+  {
+    "production_id": 776,
+    "date": "2026-06-25",
+    "product_id": "P026",
+    "units_produced": 10,
+    "production_cost": 53576
+  },
+  {
+    "production_id": 777,
+    "date": "2026-06-25",
+    "product_id": "P027",
+    "units_produced": 20,
+    "production_cost": 167848
+  },
+  {
+    "production_id": 778,
+    "date": "2026-06-25",
+    "product_id": "P028",
+    "units_produced": 30,
+    "production_cost": 172525
+  },
+  {
+    "production_id": 779,
+    "date": "2026-06-25",
+    "product_id": "P029",
+    "units_produced": 10,
+    "production_cost": 44796
+  },
+  {
+    "production_id": 780,
+    "date": "2026-06-25",
+    "product_id": "P030",
+    "units_produced": 10,
+    "production_cost": 45451
+  }
+]

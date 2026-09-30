@@ -1,0 +1,14 @@
+[
+  {
+    "transaction_type_id": 1,
+    "transaction_type_name": "initial_stock"
+  },
+  {
+    "transaction_type_id": 2,
+    "transaction_type_name": "sale"
+  },
+  {
+    "transaction_type_id": 3,
+    "transaction_type_name": "restock"
+  }
+]

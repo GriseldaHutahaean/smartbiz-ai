@@ -1,0 +1,26 @@
+[
+  {
+    "expense_type_id": 1,
+    "expense_type_name": "Listrik"
+  },
+  {
+    "expense_type_id": 2,
+    "expense_type_name": "Air"
+  },
+  {
+    "expense_type_id": 3,
+    "expense_type_name": "Sewa"
+  },
+  {
+    "expense_type_id": 4,
+    "expense_type_name": "Transportasi"
+  },
+  {
+    "expense_type_id": 5,
+    "expense_type_name": "Packaging"
+  },
+  {
+    "expense_type_id": 6,
+    "expense_type_name": "Promosi"
+  }
+]

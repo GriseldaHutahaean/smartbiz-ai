@@ -1,0 +1,218 @@
+[
+  {
+    "expense_id": 1,
+    "date": "2026-01-01",
+    "expense_type_id": 1,
+    "amount": 716118
+  },
+  {
+    "expense_id": 2,
+    "date": "2026-01-01",
+    "expense_type_id": 2,
+    "amount": 250267
+  },
+  {
+    "expense_id": 3,
+    "date": "2026-01-01",
+    "expense_type_id": 3,
+    "amount": 2180985
+  },
+  {
+    "expense_id": 4,
+    "date": "2026-01-01",
+    "expense_type_id": 4,
+    "amount": 589476
+  },
+  {
+    "expense_id": 5,
+    "date": "2026-01-01",
+    "expense_type_id": 5,
+    "amount": 498592
+  },
+  {
+    "expense_id": 6,
+    "date": "2026-01-01",
+    "expense_type_id": 6,
+    "amount": 441852
+  },
+  {
+    "expense_id": 7,
+    "date": "2026-02-01",
+    "expense_type_id": 1,
+    "amount": 849453
+  },
+  {
+    "expense_id": 8,
+    "date": "2026-02-01",
+    "expense_type_id": 2,
+    "amount": 249284
+  },
+  {
+    "expense_id": 9,
+    "date": "2026-02-01",
+    "expense_type_id": 3,
+    "amount": 1854617
+  },
+  {
+    "expense_id": 10,
+    "date": "2026-02-01",
+    "expense_type_id": 4,
+    "amount": 669286
+  },
+  {
+    "expense_id": 11,
+    "date": "2026-02-01",
+    "expense_type_id": 5,
+    "amount": 511553
+  },
+  {
+    "expense_id": 12,
+    "date": "2026-02-01",
+    "expense_type_id": 6,
+    "amount": 366537
+  },
+  {
+    "expense_id": 13,
+    "date": "2026-03-01",
+    "expense_type_id": 1,
+    "amount": 744588
+  },
+  {
+    "expense_id": 14,
+    "date": "2026-03-01",
+    "expense_type_id": 2,
+    "amount": 272734
+  },
+  {
+    "expense_id": 15,
+    "date": "2026-03-01",
+    "expense_type_id": 3,
+    "amount": 1726487
+  },
+  {
+    "expense_id": 16,
+    "date": "2026-03-01",
+    "expense_type_id": 4,
+    "amount": 688576
+  },
+  {
+    "expense_id": 17,
+    "date": "2026-03-01",
+    "expense_type_id": 5,
+    "amount": 444552
+  },
+  {
+    "expense_id": 18,
+    "date": "2026-03-01",
+    "expense_type_id": 6,
+    "amount": 435528
+  },
+  {
+    "expense_id": 19,
+    "date": "2026-04-01",
+    "expense_type_id": 1,
+    "amount": 774746
+  },
+  {
+    "expense_id": 20,
+    "date": "2026-04-01",
+    "expense_type_id": 2,
+    "amount": 249416
+  },
+  {
+    "expense_id": 21,
+    "date": "2026-04-01",
+    "expense_type_id": 3,
+    "amount": 2228390
+  },
+  {
+    "expense_id": 22,
+    "date": "2026-04-01",
+    "expense_type_id": 4,
+    "amount": 584324
+  },
+  {
+    "expense_id": 23,
+    "date": "2026-04-01",
+    "expense_type_id": 5,
+    "amount": 505624
+  },
+  {
+    "expense_id": 24,
+    "date": "2026-04-01",
+    "expense_type_id": 6,
+    "amount": 345915
+  },
+  {
+    "expense_id": 25,
+    "date": "2026-05-01",
+    "expense_type_id": 1,
+    "amount": 680563
+  },
+  {
+    "expense_id": 26,
+    "date": "2026-05-01",
+    "expense_type_id": 2,
+    "amount": 230859
+  },
+  {
+    "expense_id": 27,
+    "date": "2026-05-01",
+    "expense_type_id": 3,
+    "amount": 2108349
+  },
+  {
+    "expense_id": 28,
+    "date": "2026-05-01",
+    "expense_type_id": 4,
+    "amount": 531827
+  },
+  {
+    "expense_id": 29,
+    "date": "2026-05-01",
+    "expense_type_id": 5,
+    "amount": 442064
+  },
+  {
+    "expense_id": 30,
+    "date": "2026-05-01",
+    "expense_type_id": 6,
+    "amount": 389315
+  },
+  {
+    "expense_id": 31,
+    "date": "2026-06-01",
+    "expense_type_id": 1,
+    "amount": 835480
+  },
+  {
+    "expense_id": 32,
+    "date": "2026-06-01",
+    "expense_type_id": 2,
+    "amount": 265905
+  },
+  {
+    "expense_id": 33,
+    "date": "2026-06-01",
+    "expense_type_id": 3,
+    "amount": 1807070
+  },
+  {
+    "expense_id": 34,
+    "date": "2026-06-01",
+    "expense_type_id": 4,
+    "amount": 524325
+  },
+  {
+    "expense_id": 35,
+    "date": "2026-06-01",
+    "expense_type_id": 5,
+    "amount": 566059
+  },
+  {
+    "expense_id": 36,
+    "date": "2026-06-01",
+    "expense_type_id": 6,
+    "amount": 371279
+  }
+]

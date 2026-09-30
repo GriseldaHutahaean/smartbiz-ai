@@ -1,0 +1,107 @@
+[
+  {
+    "ingredient_id": "B001",
+    "ingredient_name": "Biji Kopi",
+    "unit_id": 2,
+    "unit_price": 180000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B002",
+    "ingredient_name": "Susu UHT",
+    "unit_id": 3,
+    "unit_price": 22000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B003",
+    "ingredient_name": "Gula Aren",
+    "unit_id": 2,
+    "unit_price": 35000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B004",
+    "ingredient_name": "Teh",
+    "unit_id": 2,
+    "unit_price": 50000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B005",
+    "ingredient_name": "Tepung Terigu",
+    "unit_id": 2,
+    "unit_price": 15000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B006",
+    "ingredient_name": "Gula Pasir",
+    "unit_id": 2,
+    "unit_price": 18000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B007",
+    "ingredient_name": "Cokelat",
+    "unit_id": 2,
+    "unit_price": 80000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B008",
+    "ingredient_name": "Keju",
+    "unit_id": 2,
+    "unit_price": 90000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B009",
+    "ingredient_name": "Telur",
+    "unit_id": 1,
+    "unit_price": 30000,
+    "purchase_quantity": 30
+  },
+  {
+    "ingredient_id": "B010",
+    "ingredient_name": "Minyak Goreng",
+    "unit_id": 3,
+    "unit_price": 20000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B011",
+    "ingredient_name": "Ayam",
+    "unit_id": 2,
+    "unit_price": 45000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B012",
+    "ingredient_name": "Udang",
+    "unit_id": 2,
+    "unit_price": 75000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B013",
+    "ingredient_name": "Pisang",
+    "unit_id": 2,
+    "unit_price": 18000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B014",
+    "ingredient_name": "Singkong",
+    "unit_id": 2,
+    "unit_price": 12000,
+    "purchase_quantity": 1000
+  },
+  {
+    "ingredient_id": "B015",
+    "ingredient_name": "Mangga",
+    "unit_id": 2,
+    "unit_price": 30000,
+    "purchase_quantity": 1000
+  }
+]

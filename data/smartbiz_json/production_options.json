@@ -1,0 +1,842 @@
+[
+  {
+    "option_id": 1,
+    "product_id": "P001",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 40000
+  },
+  {
+    "option_id": 2,
+    "product_id": "P001",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 156000
+  },
+  {
+    "option_id": 3,
+    "product_id": "P001",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 608000
+  },
+  {
+    "option_id": 4,
+    "product_id": "P001",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1332000
+  },
+  {
+    "option_id": 5,
+    "product_id": "P002",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 10000
+  },
+  {
+    "option_id": 6,
+    "product_id": "P002",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 39000
+  },
+  {
+    "option_id": 7,
+    "product_id": "P002",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 152000
+  },
+  {
+    "option_id": 8,
+    "product_id": "P002",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 333000
+  },
+  {
+    "option_id": 9,
+    "product_id": "P003",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 45000
+  },
+  {
+    "option_id": 10,
+    "product_id": "P003",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 175500
+  },
+  {
+    "option_id": 11,
+    "product_id": "P003",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 684000
+  },
+  {
+    "option_id": 12,
+    "product_id": "P003",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1498500
+  },
+  {
+    "option_id": 13,
+    "product_id": "P004",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 42500
+  },
+  {
+    "option_id": 14,
+    "product_id": "P004",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 165750
+  },
+  {
+    "option_id": 15,
+    "product_id": "P004",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 646000
+  },
+  {
+    "option_id": 16,
+    "product_id": "P004",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1415250
+  },
+  {
+    "option_id": 17,
+    "product_id": "P005",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 17500
+  },
+  {
+    "option_id": 18,
+    "product_id": "P005",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 68250
+  },
+  {
+    "option_id": 19,
+    "product_id": "P005",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 266000
+  },
+  {
+    "option_id": 20,
+    "product_id": "P005",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 582750
+  },
+  {
+    "option_id": 21,
+    "product_id": "P006",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 25000
+  },
+  {
+    "option_id": 22,
+    "product_id": "P006",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 97500
+  },
+  {
+    "option_id": 23,
+    "product_id": "P006",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 380000
+  },
+  {
+    "option_id": 24,
+    "product_id": "P006",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 832500
+  },
+  {
+    "option_id": 25,
+    "product_id": "P007",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 27500
+  },
+  {
+    "option_id": 26,
+    "product_id": "P007",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 107250
+  },
+  {
+    "option_id": 27,
+    "product_id": "P007",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 418000
+  },
+  {
+    "option_id": 28,
+    "product_id": "P007",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 915750
+  },
+  {
+    "option_id": 29,
+    "product_id": "P008",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 12500
+  },
+  {
+    "option_id": 30,
+    "product_id": "P008",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 48750
+  },
+  {
+    "option_id": 31,
+    "product_id": "P008",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 190000
+  },
+  {
+    "option_id": 32,
+    "product_id": "P008",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 416250
+  },
+  {
+    "option_id": 33,
+    "product_id": "P009",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 17500
+  },
+  {
+    "option_id": 34,
+    "product_id": "P009",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 68250
+  },
+  {
+    "option_id": 35,
+    "product_id": "P009",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 266000
+  },
+  {
+    "option_id": 36,
+    "product_id": "P009",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 582750
+  },
+  {
+    "option_id": 37,
+    "product_id": "P010",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 35000
+  },
+  {
+    "option_id": 38,
+    "product_id": "P010",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 136500
+  },
+  {
+    "option_id": 39,
+    "product_id": "P010",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 532000
+  },
+  {
+    "option_id": 40,
+    "product_id": "P010",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1165500
+  },
+  {
+    "option_id": 41,
+    "product_id": "P011",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 50000
+  },
+  {
+    "option_id": 42,
+    "product_id": "P011",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 195000
+  },
+  {
+    "option_id": 43,
+    "product_id": "P011",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 760000
+  },
+  {
+    "option_id": 44,
+    "product_id": "P011",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1665000
+  },
+  {
+    "option_id": 45,
+    "product_id": "P012",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 22500
+  },
+  {
+    "option_id": 46,
+    "product_id": "P012",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 87750
+  },
+  {
+    "option_id": 47,
+    "product_id": "P012",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 342000
+  },
+  {
+    "option_id": 48,
+    "product_id": "P012",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 749250
+  },
+  {
+    "option_id": 49,
+    "product_id": "P013",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 15000
+  },
+  {
+    "option_id": 50,
+    "product_id": "P013",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 58500
+  },
+  {
+    "option_id": 51,
+    "product_id": "P013",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 228000
+  },
+  {
+    "option_id": 52,
+    "product_id": "P013",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 499500
+  },
+  {
+    "option_id": 53,
+    "product_id": "P014",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 35000
+  },
+  {
+    "option_id": 54,
+    "product_id": "P014",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 136500
+  },
+  {
+    "option_id": 55,
+    "product_id": "P014",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 532000
+  },
+  {
+    "option_id": 56,
+    "product_id": "P014",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1165500
+  },
+  {
+    "option_id": 57,
+    "product_id": "P015",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 27500
+  },
+  {
+    "option_id": 58,
+    "product_id": "P015",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 107250
+  },
+  {
+    "option_id": 59,
+    "product_id": "P015",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 418000
+  },
+  {
+    "option_id": 60,
+    "product_id": "P015",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 915750
+  },
+  {
+    "option_id": 61,
+    "product_id": "P016",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 32500
+  },
+  {
+    "option_id": 62,
+    "product_id": "P016",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 126750
+  },
+  {
+    "option_id": 63,
+    "product_id": "P016",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 494000
+  },
+  {
+    "option_id": 64,
+    "product_id": "P016",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1082250
+  },
+  {
+    "option_id": 65,
+    "product_id": "P017",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 30000
+  },
+  {
+    "option_id": 66,
+    "product_id": "P017",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 117000
+  },
+  {
+    "option_id": 67,
+    "product_id": "P017",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 456000
+  },
+  {
+    "option_id": 68,
+    "product_id": "P017",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 999000
+  },
+  {
+    "option_id": 69,
+    "product_id": "P018",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 70000
+  },
+  {
+    "option_id": 70,
+    "product_id": "P018",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 273000
+  },
+  {
+    "option_id": 71,
+    "product_id": "P018",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 1064000
+  },
+  {
+    "option_id": 72,
+    "product_id": "P018",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 2331000
+  },
+  {
+    "option_id": 73,
+    "product_id": "P019",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 60000
+  },
+  {
+    "option_id": 74,
+    "product_id": "P019",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 234000
+  },
+  {
+    "option_id": 75,
+    "product_id": "P019",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 912000
+  },
+  {
+    "option_id": 76,
+    "product_id": "P019",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1998000
+  },
+  {
+    "option_id": 77,
+    "product_id": "P020",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 50000
+  },
+  {
+    "option_id": 78,
+    "product_id": "P020",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 195000
+  },
+  {
+    "option_id": 79,
+    "product_id": "P020",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 760000
+  },
+  {
+    "option_id": 80,
+    "product_id": "P020",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1665000
+  },
+  {
+    "option_id": 81,
+    "product_id": "P021",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 45000
+  },
+  {
+    "option_id": 82,
+    "product_id": "P021",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 175500
+  },
+  {
+    "option_id": 83,
+    "product_id": "P021",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 684000
+  },
+  {
+    "option_id": 84,
+    "product_id": "P021",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1498500
+  },
+  {
+    "option_id": 85,
+    "product_id": "P022",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 55000
+  },
+  {
+    "option_id": 86,
+    "product_id": "P022",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 214500
+  },
+  {
+    "option_id": 87,
+    "product_id": "P022",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 836000
+  },
+  {
+    "option_id": 88,
+    "product_id": "P022",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1831500
+  },
+  {
+    "option_id": 89,
+    "product_id": "P023",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 20000
+  },
+  {
+    "option_id": 90,
+    "product_id": "P023",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 78000
+  },
+  {
+    "option_id": 91,
+    "product_id": "P023",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 304000
+  },
+  {
+    "option_id": 92,
+    "product_id": "P023",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 666000
+  },
+  {
+    "option_id": 93,
+    "product_id": "P024",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 20000
+  },
+  {
+    "option_id": 94,
+    "product_id": "P024",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 78000
+  },
+  {
+    "option_id": 95,
+    "product_id": "P024",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 304000
+  },
+  {
+    "option_id": 96,
+    "product_id": "P024",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 666000
+  },
+  {
+    "option_id": 97,
+    "product_id": "P025",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 30000
+  },
+  {
+    "option_id": 98,
+    "product_id": "P025",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 117000
+  },
+  {
+    "option_id": 99,
+    "product_id": "P025",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 456000
+  },
+  {
+    "option_id": 100,
+    "product_id": "P025",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 999000
+  },
+  {
+    "option_id": 101,
+    "product_id": "P026",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 25000
+  },
+  {
+    "option_id": 102,
+    "product_id": "P026",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 97500
+  },
+  {
+    "option_id": 103,
+    "product_id": "P026",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 380000
+  },
+  {
+    "option_id": 104,
+    "product_id": "P026",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 832500
+  },
+  {
+    "option_id": 105,
+    "product_id": "P027",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 42500
+  },
+  {
+    "option_id": 106,
+    "product_id": "P027",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 165750
+  },
+  {
+    "option_id": 107,
+    "product_id": "P027",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 646000
+  },
+  {
+    "option_id": 108,
+    "product_id": "P027",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 1415250
+  },
+  {
+    "option_id": 109,
+    "product_id": "P028",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 30000
+  },
+  {
+    "option_id": 110,
+    "product_id": "P028",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 117000
+  },
+  {
+    "option_id": 111,
+    "product_id": "P028",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 456000
+  },
+  {
+    "option_id": 112,
+    "product_id": "P028",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 999000
+  },
+  {
+    "option_id": 113,
+    "product_id": "P029",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 22500
+  },
+  {
+    "option_id": 114,
+    "product_id": "P029",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 87750
+  },
+  {
+    "option_id": 115,
+    "product_id": "P029",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 342000
+  },
+  {
+    "option_id": 116,
+    "product_id": "P029",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 749250
+  },
+  {
+    "option_id": 117,
+    "product_id": "P030",
+    "option_name": "small",
+    "units_produced": 5,
+    "production_cost": 22500
+  },
+  {
+    "option_id": 118,
+    "product_id": "P030",
+    "option_name": "medium",
+    "units_produced": 10,
+    "production_cost": 87750
+  },
+  {
+    "option_id": 119,
+    "product_id": "P030",
+    "option_name": "large",
+    "units_produced": 20,
+    "production_cost": 342000
+  },
+  {
+    "option_id": 120,
+    "product_id": "P030",
+    "option_name": "extra_large",
+    "units_produced": 30,
+    "production_cost": 749250
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "product_id": "P001",
+    "ingredient_id": "B004",
+    "quantity_per_batch": 128
+  },
+  {
+    "product_id": "P001",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 119
+  },
+  {
+    "product_id": "P001",
+    "ingredient_id": "B015",
+    "quantity_per_batch": 139
+  },
+  {
+    "product_id": "P002",
+    "ingredient_id": "B002",
+    "quantity_per_batch": 48
+  },
+  {
+    "product_id": "P002",
+    "ingredient_id": "B004",
+    "quantity_per_batch": 29
+  },
+  {
+    "product_id": "P002",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 43
+  },
+  {
+    "product_id": "P003",
+    "ingredient_id": "B002",
+    "quantity_per_batch": 74
+  },
+  {
+    "product_id": "P003",
+    "ingredient_id": "B003",
+    "quantity_per_batch": 21
+  },
+  {
+    "product_id": "P003",
+    "ingredient_id": "B004",
+    "quantity_per_batch": 130
+  },
+  {
+    "product_id": "P004",
+    "ingredient_id": "B001",
+    "quantity_per_batch": 114
+  },
+  {
+    "product_id": "P004",
+    "ingredient_id": "B004",
+    "quantity_per_batch": 111
+  },
+  {
+    "product_id": "P004",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 90
+  },
+  {
+    "product_id": "P005",
+    "ingredient_id": "B001",
+    "quantity_per_batch": 87
+  },
+  {
+    "product_id": "P005",
+    "ingredient_id": "B004",
+    "quantity_per_batch": 147
+  },
+  {
+    "product_id": "P005",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 43
+  },
+  {
+    "product_id": "P006",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 48
+  },
+  {
+    "product_id": "P006",
+    "ingredient_id": "B008",
+    "quantity_per_batch": 56
+  },
+  {
+    "product_id": "P006",
+    "ingredient_id": "B009",
+    "quantity_per_batch": 134
+  },
+  {
+    "product_id": "P007",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 144
+  },
+  {
+    "product_id": "P007",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 68
+  },
+  {
+    "product_id": "P007",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 26
+  },
+  {
+    "product_id": "P008",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 146
+  },
+  {
+    "product_id": "P008",
+    "ingredient_id": "B009",
+    "quantity_per_batch": 96
+  },
+  {
+    "product_id": "P008",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 110
+  },
+  {
+    "product_id": "P009",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 80
+  },
+  {
+    "product_id": "P009",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 27
+  },
+  {
+    "product_id": "P009",
+    "ingredient_id": "B008",
+    "quantity_per_batch": 112
+  },
+  {
+    "product_id": "P010",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 30
+  },
+  {
+    "product_id": "P010",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 99
+  },
+  {
+    "product_id": "P010",
+    "ingredient_id": "B015",
+    "quantity_per_batch": 21
+  },
+  {
+    "product_id": "P011",
+    "ingredient_id": "B002",
+    "quantity_per_batch": 42
+  },
+  {
+    "product_id": "P011",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 36
+  },
+  {
+    "product_id": "P011",
+    "ingredient_id": "B009",
+    "quantity_per_batch": 125
+  },
+  {
+    "product_id": "P012",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 149
+  },
+  {
+    "product_id": "P012",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 50
+  },
+  {
+    "product_id": "P012",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 107
+  },
+  {
+    "product_id": "P013",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 50
+  },
+  {
+    "product_id": "P013",
+    "ingredient_id": "B013",
+    "quantity_per_batch": 147
+  },
+  {
+    "product_id": "P013",
+    "ingredient_id": "B014",
+    "quantity_per_batch": 40
+  },
+  {
+    "product_id": "P014",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 124
+  },
+  {
+    "product_id": "P014",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 71
+  },
+  {
+    "product_id": "P014",
+    "ingredient_id": "B013",
+    "quantity_per_batch": 48
+  },
+  {
+    "product_id": "P015",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 80
+  },
+  {
+    "product_id": "P015",
+    "ingredient_id": "B013",
+    "quantity_per_batch": 144
+  },
+  {
+    "product_id": "P015",
+    "ingredient_id": "B014",
+    "quantity_per_batch": 103
+  },
+  {
+    "product_id": "P016",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 101
+  },
+  {
+    "product_id": "P016",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 107
+  },
+  {
+    "product_id": "P016",
+    "ingredient_id": "B011",
+    "quantity_per_batch": 40
+  },
+  {
+    "product_id": "P017",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 45
+  },
+  {
+    "product_id": "P017",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 34
+  },
+  {
+    "product_id": "P017",
+    "ingredient_id": "B011",
+    "quantity_per_batch": 133
+  },
+  {
+    "product_id": "P018",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 54
+  },
+  {
+    "product_id": "P018",
+    "ingredient_id": "B008",
+    "quantity_per_batch": 66
+  },
+  {
+    "product_id": "P018",
+    "ingredient_id": "B011",
+    "quantity_per_batch": 114
+  },
+  {
+    "product_id": "P019",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 76
+  },
+  {
+    "product_id": "P019",
+    "ingredient_id": "B008",
+    "quantity_per_batch": 44
+  },
+  {
+    "product_id": "P019",
+    "ingredient_id": "B011",
+    "quantity_per_batch": 102
+  },
+  {
+    "product_id": "P020",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 58
+  },
+  {
+    "product_id": "P020",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 89
+  },
+  {
+    "product_id": "P020",
+    "ingredient_id": "B009",
+    "quantity_per_batch": 105
+  },
+  {
+    "product_id": "P021",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 124
+  },
+  {
+    "product_id": "P021",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 40
+  },
+  {
+    "product_id": "P021",
+    "ingredient_id": "B011",
+    "quantity_per_batch": 85
+  },
+  {
+    "product_id": "P022",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 103
+  },
+  {
+    "product_id": "P022",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 106
+  },
+  {
+    "product_id": "P022",
+    "ingredient_id": "B011",
+    "quantity_per_batch": 35
+  },
+  {
+    "product_id": "P023",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 85
+  },
+  {
+    "product_id": "P023",
+    "ingredient_id": "B013",
+    "quantity_per_batch": 45
+  },
+  {
+    "product_id": "P023",
+    "ingredient_id": "B014",
+    "quantity_per_batch": 144
+  },
+  {
+    "product_id": "P024",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 98
+  },
+  {
+    "product_id": "P024",
+    "ingredient_id": "B013",
+    "quantity_per_batch": 29
+  },
+  {
+    "product_id": "P024",
+    "ingredient_id": "B014",
+    "quantity_per_batch": 143
+  },
+  {
+    "product_id": "P025",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 28
+  },
+  {
+    "product_id": "P025",
+    "ingredient_id": "B013",
+    "quantity_per_batch": 133
+  },
+  {
+    "product_id": "P025",
+    "ingredient_id": "B014",
+    "quantity_per_batch": 36
+  },
+  {
+    "product_id": "P026",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 138
+  },
+  {
+    "product_id": "P026",
+    "ingredient_id": "B010",
+    "quantity_per_batch": 89
+  },
+  {
+    "product_id": "P026",
+    "ingredient_id": "B014",
+    "quantity_per_batch": 114
+  },
+  {
+    "product_id": "P027",
+    "ingredient_id": "B001",
+    "quantity_per_batch": 25
+  },
+  {
+    "product_id": "P027",
+    "ingredient_id": "B003",
+    "quantity_per_batch": 135
+  },
+  {
+    "product_id": "P027",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 94
+  },
+  {
+    "product_id": "P028",
+    "ingredient_id": "B001",
+    "quantity_per_batch": 71
+  },
+  {
+    "product_id": "P028",
+    "ingredient_id": "B002",
+    "quantity_per_batch": 95
+  },
+  {
+    "product_id": "P028",
+    "ingredient_id": "B015",
+    "quantity_per_batch": 84
+  },
+  {
+    "product_id": "P029",
+    "ingredient_id": "B005",
+    "quantity_per_batch": 76
+  },
+  {
+    "product_id": "P029",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 85
+  },
+  {
+    "product_id": "P029",
+    "ingredient_id": "B009",
+    "quantity_per_batch": 134
+  },
+  {
+    "product_id": "P030",
+    "ingredient_id": "B002",
+    "quantity_per_batch": 35
+  },
+  {
+    "product_id": "P030",
+    "ingredient_id": "B006",
+    "quantity_per_batch": 61
+  },
+  {
+    "product_id": "P030",
+    "ingredient_id": "B007",
+    "quantity_per_batch": 129
+  }
+]

@@ -21,6 +21,7 @@ from ucs_production import (
     build_graph,
     uniform_cost_search,
 )
+from ucs_dataset import recommend_all
 
 
 @pytest.fixture
@@ -304,3 +305,14 @@ def test_product_scenarios_fixture_covers_multiple_umkm_cases(product_scenarios)
             list(product["options"]),
         )
         assert isinstance(graph, dict)
+
+
+def test_bundled_dataset_produces_recommendations_for_all_products():
+    data_dir = Path(__file__).resolve().parents[1] / "data" / "smartbiz_json"
+
+    recommendations = recommend_all(data_dir)
+
+    assert len(recommendations) == 30
+    assert all(item["total_cost"] is not None for item in recommendations)
+    assert sum(item["production_units"] > 0 for item in recommendations) == 22
+    assert sum(item["total_cost"] for item in recommendations) == 7_667_500

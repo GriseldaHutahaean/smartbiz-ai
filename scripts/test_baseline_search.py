@@ -1,10 +1,4 @@
-"""Tests for the SmartBiz baseline UCS production module.
-
-This repository currently contains one implemented decision-support module:
-Uniform Cost Search for production planning. The finance, inventory, and
-forecasting features described in the SmartBiz README are not implemented yet,
-so those requirements are reported as skipped instead of being faked.
-"""
+"""Tests for SmartBiz baseline decision-support features."""
 
 import sys
 from pathlib import Path
@@ -22,6 +16,14 @@ from ucs_production import (
     uniform_cost_search,
 )
 from ucs_dataset import recommend_all
+from smartbiz_features import (
+    analyze_finances,
+    forecast_stock,
+    get_inventory_status,
+    get_low_stock_alerts,
+    recommend_prices,
+    recommend_restock,
+)
 
 
 @pytest.fixture
@@ -244,47 +246,101 @@ def test_decision_stores_transition_and_cost(from_stock, to_stock, produced_unit
     assert decision.cost == cost
 
 
-@pytest.mark.parametrize(
-    ("feature_name", "module_name"),
-    [
-        pytest.param(
-            "Financial analysis",
-            "smartbiz_ai.financial",
-            id="financial-analysis",
-        ),
-        pytest.param(
-            "Selling price recommendation",
-            "smartbiz_ai.pricing",
-            id="selling-price-recommendation",
-        ),
-        pytest.param(
-            "Inventory management",
-            "smartbiz_ai.inventory",
-            id="inventory-management",
-        ),
-        pytest.param(
-            "Stock forecasting",
-            "smartbiz_ai.forecasting",
-            id="stock-forecasting",
-        ),
-        pytest.param(
-            "Low stock alert",
-            "smartbiz_ai.alerts",
-            id="low-stock-alert",
-        ),
-        pytest.param(
-            "Restock recommendation",
-            "smartbiz_ai.restock",
-            id="restock-recommendation",
-        ),
-    ],
-)
-def test_smartbiz_requirements_not_implemented_yet(feature_name, module_name):
-    """Mengonfirmasi fitur yang belum ada dalam repository dan tidak boleh dibuat secara palsu."""
-    pytest.skip(
-        f"Not currently testable because the required implementation does not exist: "
-        f"{feature_name} ({module_name})."
-    )
+def test_financial_analysis_sums_revenue_costs_and_expenses():
+    dataset = {
+        "products": [{"product_id": "P1", "hpp": 60, "production_cost": 20}],
+        "sales": [
+            {"product_id": "P1", "quantity_sold": 2, "selling_price": 150},
+            {"product_id": "P1", "quantity_sold": 1, "selling_price": 150},
+        ],
+        "expenses": [{"amount": 50}],
+    }
+
+    result = analyze_finances(dataset)
+
+    assert result == {
+        "revenue": 450,
+        "cost_of_goods": 240,
+        "gross_profit": 210,
+        "expenses": 50,
+        "net_profit": 160,
+        "net_margin": pytest.approx(160 / 450),
+    }
+
+
+def test_price_recommendation_uses_target_margin_on_total_unit_cost():
+    dataset = {
+        "products": [
+            {
+                "product_id": "P1",
+                "product_name": "Produk Uji",
+                "hpp": 60,
+                "production_cost": 20,
+                "selling_price": 100,
+                "target_margin": 0.2,
+            }
+        ]
+    }
+
+    result = recommend_prices(dataset)[0]
+
+    assert result["unit_cost"] == 80
+    assert result["recommended_price"] == 100
+    assert result["current_margin"] == pytest.approx(0.2)
+
+
+def test_inventory_status_alerts_and_forecast_use_stock_ledger():
+    dataset = {
+        "products": [
+            {
+                "product_id": "P1",
+                "product_name": "Produk Uji",
+                "initial_stock": 100,
+                "stock_threshold": 10,
+            }
+        ],
+        "inventory_history": [
+            {"product_id": "P1", "quantity_change": 20},
+            {"product_id": "P1", "quantity_change": -12},
+        ],
+        "sales": [
+            {"product_id": "P1", "date": "2026-01-01", "quantity_sold": 4},
+            {"product_id": "P1", "date": "2026-01-03", "quantity_sold": 4},
+        ],
+    }
+
+    status = get_inventory_status(dataset)[0]
+    forecast = forecast_stock(dataset)[0]
+
+    assert status["current_stock"] == 8
+    assert status["target_stock"] == 100
+    assert get_low_stock_alerts(dataset) == [status]
+    assert forecast["average_daily_sales"] == pytest.approx(8 / 3)
+    assert forecast["days_until_stockout"] == pytest.approx(3)
+
+
+def test_restock_recommendation_uses_lowest_cost_production_path():
+    dataset = {
+        "products": [
+            {
+                "product_id": "P1",
+                "product_name": "Produk Uji",
+                "initial_stock": 10,
+                "stock_threshold": 3,
+            }
+        ],
+        "inventory_history": [{"product_id": "P1", "quantity_change": 0}],
+        "production_options": [
+            {"product_id": "P1", "units_produced": 5, "production_cost": 30},
+            {"product_id": "P1", "units_produced": 10, "production_cost": 70},
+        ],
+    }
+
+    result = recommend_restock(dataset)
+
+    assert result[0]["production_units"] == 10
+    assert result[0]["batch_count"] == 2
+    assert result[0]["total_cost"] == 60
 
 
 def test_product_scenarios_fixture_covers_multiple_umkm_cases(product_scenarios):

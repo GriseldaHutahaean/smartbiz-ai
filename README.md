@@ -227,6 +227,42 @@ uv run --no-project python scripts/ucs_dataset.py --product-id P001
 
 Runner menghitung stok saat ini sebagai jumlah `quantity_change` pada `inventory_history`, memakai `initial_stock` produk sebagai target, lalu mencari kombinasi batch berbiaya minimum dari `production_options`. Tabel `sales.json` tetap disertakan sebagai data historis, tetapi belum digunakan untuk meramal permintaan. Karena ledger stok dan penjualan berbeda untuk P005, P018, dan P027, rekomendasi saat ini mengikuti saldo ledger.
 
+### Baseline Fitur SmartBiz
+
+Fungsi baseline berbasis aturan tersedia pada `scripts/smartbiz_features.py` dan membaca tabel `products.json`, `sales.json`, `expenses.json`, `inventory_history.json`, serta `production_options.json`. Contoh pemanggilan dari root repository:
+
+```python
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path("scripts").resolve()))
+from smartbiz_features import (
+    analyze_finances,
+    forecast_stock,
+    get_inventory_status,
+    get_low_stock_alerts,
+    load_dataset,
+    recommend_prices,
+    recommend_restock,
+)
+
+data = load_dataset()
+finances = analyze_finances(data)
+prices = recommend_prices(data)
+stocks = get_inventory_status(data)
+forecasts = forecast_stock(data)
+alerts = get_low_stock_alerts(data)
+restocks = recommend_restock(data)
+```
+
+Analisis keuangan menghitung omzet, HPP ditambah biaya produksi, laba kotor, pengeluaran, laba bersih, dan margin bersih. Rekomendasi harga memakai target margin pada total biaya per unit. Forecasting adalah baseline rata-rata penjualan harian selama rentang tanggal pada dataset, bukan model machine learning. Alert muncul saat stok sama dengan atau di bawah `stock_threshold`; rekomendasi restock memakai UCS untuk mengejar `initial_stock` dengan total biaya batch minimum.
+
+Tes perilaku baseline dapat dijalankan dengan:
+
+```bash
+python -m pytest -q scripts/test_baseline_search.py
+```
+
 Modul ini merupakan salah satu bagian SmartBiz AI untuk mendukung keputusan persediaan dan produksi. Modul ini bukan supplier selection, route optimization, maupun sistem logistik. Perhitungan HPP, keuntungan, dan margin tetap merupakan perhitungan bisnis terpisah dari algoritma UCS.
 
 Untuk memeriksa bahwa environment Python project dapat digunakan, jalankan:

@@ -8,8 +8,8 @@ import pytest
 
 sys.path.append(str(Path(__file__).resolve().parent))
 
-from scripts.solver import genetic_search, recommend_all
-from ucs_production import ProductionOption
+from scripts.ga_solver import genetic_search, recommend_all
+from scripts.ucs_production import ProductionOption
 
 
 def test_genetic_search_returns_empty_plan_when_stock_meets_target():

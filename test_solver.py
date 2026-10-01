@@ -1,4 +1,5 @@
-git push origin v0.2-milestone2"""Module test_solver.py: Suite pengujian otomatis untuk solver.py menggunakan pytest."""
+git push origin v0.2-milestone2git tag --list "v0.2-milestone2"
+git show --no-patch --format=fuller v0.2-milestone2"""Module test_solver.py: Suite pengujian otomatis untuk solver.py menggunakan pytest."""
 
 import pytest
 import json

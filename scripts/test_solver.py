@@ -1,10 +1,9 @@
-git push origin v0.2-milestone2git tag --list "v0.2-milestone2"
-git show --no-patch --format=fuller v0.2-milestone2"""Module test_solver.py: Suite pengujian otomatis untuk solver.py menggunakan pytest."""
+"""Module test_solver.py: Suite pengujian otomatis untuk solver.py menggunakan pytest."""
 
 import pytest
 import json
 from pathlib import Path
-from solver import (
+from scripts.solver import (
     CSPSolver,
     Variable,
     Constraint,

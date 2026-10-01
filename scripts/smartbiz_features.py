@@ -71,6 +71,7 @@ def recommend_prices(
         target_margin = float(product["target_margin"])
         if not 0 <= target_margin < 1:
             raise ValueError(f"Invalid target margin for {product['product_id']}")
+        # Margin dihitung sebagai proporsi dari harga jual, bukan dari biaya.
         recommended_price = math.ceil(unit_cost / (1 - target_margin))
         current_price = int(product["selling_price"])
         recommendations.append(
@@ -116,6 +117,7 @@ def forecast_stock(
     sales = dataset["sales"]
     if sales:
         dates = [date.fromisoformat(str(sale["date"])) for sale in sales]
+        # Tambahkan satu hari agar tanggal awal dan akhir sama-sama dihitung.
         observed_days = (max(dates) - min(dates)).days + 1
     else:
         observed_days = 0
@@ -128,6 +130,7 @@ def forecast_stock(
     for stock in get_inventory_status(dataset):
         product_id = str(stock["product_id"])
         average_daily_sales = units_sold[product_id] / observed_days if observed_days else 0.0
+        # Tanpa data penjualan, waktu stok habis belum dapat diperkirakan.
         days_until_stockout = (
             stock["current_stock"] / average_daily_sales if average_daily_sales else None
         )
@@ -177,6 +180,7 @@ def recommend_restock(
 
         options = options_by_product[str(stock["product_id"])]
         graph = build_graph(current_stock, target_stock, options)
+        # UCS mencari rangkaian batch dengan biaya kumulatif terendah.
         result = uniform_cost_search(graph, current_stock, target_stock)
         if result is None:
             production_units = None

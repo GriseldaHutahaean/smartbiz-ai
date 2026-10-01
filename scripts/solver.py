@@ -1,357 +1,315 @@
-"""Genetic Algorithm production recommendations for the SmartBiz dataset."""
+"""Module solver.py: CSP Constraint Solver & Decision Engine untuk SmartBiz AI.
 
-from __future__ import annotations
+Membaca dataset JSON (smartbiz_json) dan menyelesaikan Constraint Satisfaction
+Problem (CSP) menggunakan propagasi AC-3 dan Backtracking dengan heuristik MRV.
+"""
 
-import argparse
+from dataclasses import dataclass, field
+from typing import Any, Callable, Dict, List, Optional, Tuple
 import json
-import random
-from collections import defaultdict
+import logging
 from pathlib import Path
 
-from ucs_production import Decision, ProductionOption, build_graph
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DATA_DIR = PROJECT_ROOT / "data" / "smartbiz_json"
+class UnsatisfiableConstraintError(Exception):
+    """Custom exception ketika tidak ada solusi yang memenuhi batasan."""
+    pass
 
 
-def _read_table(data_dir: Path, table_name: str) -> list[dict[str, object]]:
-    with (data_dir / f"{table_name}.json").open(encoding="utf-8") as data_file:
-        records = json.load(data_file)
-    if not isinstance(records, list):
-        raise ValueError(f"{table_name}.json must contain a JSON array")
-    return records
+# ============================================================================
+# 1. DATASET LOADER (Integrasi smartbiz_json)
+# ============================================================================
+
+class DatasetLoader:
+    """Memuat dan mengonsolidasi seluruh file JSON dari folder dataset."""
+
+    def __init__(self, data_dir: str = "smartbiz_json"):
+        self.data_path = Path(data_dir)
+
+    def _load_json(self, filename: str) -> List[Dict[str, Any]]:
+        file_file = self.data_path / filename
+        if not file_file.exists():
+            logging.warning(f"File {filename} tidak ditemukan di {self.data_path}")
+            return []
+        with open(file_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    def load_all_data(self) -> Dict[str, Any]:
+        """Membaca seluruh entitas JSON yang diperlukan untuk optimasi."""
+        return {
+            "categories": self._load_json("categories.json"),
+            "products": self._load_json("products.json"),
+            "ingredients": self._load_json("ingredients.json"),
+            "product_recipes": self._load_json("product_recipes.json"),
+            "production_options": self._load_json("production_options.json"),
+            "expenses": self._load_json("expenses.json"),
+            "sales_analytics": self._load_json("sales_analytics.json"),
+        }
 
 
-def _states_that_reach_goal(
-    graph: dict[int, list[Decision]],
-    goal: int,
-) -> set[int]:
-    states = {
-        state
-        for state, decisions in graph.items()
-        if any(decision.to_stock >= goal for decision in decisions)
-    }
-    changed = True
-    while changed:
-        changed = False
-        for state, decisions in graph.items():
-            if state not in states and any(decision.to_stock in states for decision in decisions):
-                states.add(state)
-                changed = True
-    return states
+# ============================================================================
+# 2. ABSTRAKSI TERSTRUKTUR CSP ENGINE
+# ============================================================================
+
+@dataclass(frozen=True)
+class Variable:
+    """Variabel keputusan CSP."""
+    name: str
+    category: str  # 'production' atau 'restock'
 
 
-def _random_feasible_chromosome(
-    start: int,
-    goal: int,
-    options: list[ProductionOption],
-    states_that_reach_goal: set[int],
-    max_steps: int,
-    rng: random.Random,
-) -> list[int]:
-    chromosome: list[int] = []
-    stock = start
+@dataclass
+class Constraint:
+    """Batasan operasional antar variabel."""
+    scope: List[Variable]
+    condition: Callable[..., bool]
+    description: str = ""
 
-    while stock < goal and len(chromosome) < max_steps:
-        viable = [
-            (index, option)
-            for index, option in enumerate(options)
-            if option.units > 0
-            and (
-                stock + option.units >= goal
-                or stock + option.units in states_that_reach_goal
+    def is_satisfied(self, assignment: Dict[Variable, Any]) -> bool:
+        if not all(v in assignment for v in self.scope):
+            return True
+        args = [assignment[v] for v in self.scope]
+        return self.condition(*args)
+
+
+class CSPSolver:
+    """Mesin pemecah CSP dengan AC-3 dan Backtracking MRV."""
+
+    def __init__(
+        self,
+        variables: List[Variable],
+        domains: Dict[Variable, List[Any]],
+        constraints: List[Constraint],
+        max_backtracks: int = 10000,
+    ):
+        self.variables = variables
+        self.domains = {v: list(domains[v]) for v in variables}
+        self.constraints = constraints
+        self.max_backtracks = max_backtracks
+        self.backtrack_count = 0
+
+        self.binary_constraints: List[Tuple[Variable, Variable, Constraint]] = []
+        for c in constraints:
+            if len(c.scope) == 2:
+                v1, v2 = c.scope[0], c.scope[1]
+                self.binary_constraints.append((v1, v2, c))
+                self.binary_constraints.append((v2, v1, c))
+
+    def ac3(self) -> bool:
+        """Propagasi Arc Consistency 3 (AC-3) untuk pemangkasan domain."""
+        queue = list(self.binary_constraints)
+        while queue:
+            xi, xj, constraint = queue.pop(0)
+            if self._revise(xi, xj, constraint):
+                if not self.domains[xi]:
+                    return False
+                for neighbor_i, neighbor_j, c in self.binary_constraints:
+                    if neighbor_j == xi and neighbor_i != xj:
+                        queue.append((neighbor_i, neighbor_j, c))
+        return True
+
+    def _revise(self, xi: Variable, xj: Variable, constraint: Constraint) -> bool:
+        revised = False
+        to_remove = []
+        for x in self.domains[xi]:
+            has_support = any(
+                constraint.is_satisfied({xi: x, xj: y}) for y in self.domains[xj]
             )
-        ]
-        if not viable:
-            raise RuntimeError("Reachable production state has no viable batch option")
-        option_index, option = rng.choice(viable)
-        chromosome.append(option_index)
-        stock += option.units
+            if not has_support:
+                to_remove.append(x)
+                revised = True
+        for val in to_remove:
+            self.domains[xi].remove(val)
+        return revised
 
-    if stock < goal:
-        raise RuntimeError("Could not construct a feasible production chromosome")
-    return chromosome
+    def select_unassigned_variable(self, assignment: Dict[Variable, Any]) -> Variable:
+        """Pilihan variabel berdasarkan MRV (Minimum Remaining Values)."""
+        unassigned = [v for v in self.variables if v not in assignment]
+        return min(unassigned, key=lambda var: len(self.domains[var]))
 
+    def solve(self) -> Dict[Variable, Any]:
+        """Eksekusi pencarian solusi CSP."""
+        for v in self.variables:
+            if not self.domains.get(v):
+                raise UnsatisfiableConstraintError(
+                    f"Domain variabel '{v.name}' kosong (Unsatisfiable)."
+                )
 
-def _evaluate_chromosome(
-    chromosome: list[int],
-    start: int,
-    goal: int,
-    options: list[ProductionOption],
-    max_steps: int,
-) -> tuple[tuple[int, int, int], tuple[list[Decision], int] | None]:
-    stock = start
-    path: list[Decision] = []
-    total_cost = 0
-
-    for option_index in chromosome[:max_steps]:
-        if stock >= goal:
-            break
-        option = options[option_index]
-        next_stock = stock + option.units
-        path.append(
-            Decision(
-                from_stock=stock,
-                to_stock=next_stock,
-                produced_units=option.units,
-                cost=option.cost,
+        if not self.ac3():
+            raise UnsatisfiableConstraintError(
+                "Inkonsistensi terdeteksi: AC-3 memangkas domain hingga kosong."
             )
-        )
-        stock = next_stock
-        total_cost += option.cost
 
-    if stock >= goal:
-        return (0, 0, total_cost), (path, total_cost)
-    return (1, goal - stock, total_cost), None
+        self.backtrack_count = 0
+        solution = self._backtrack({})
+        if solution is None:
+            raise UnsatisfiableConstraintError(
+                "Tidak ada kombinasi keputusan yang memenuhi seluruh Hard Constraints."
+            )
+        return solution
 
+    def _backtrack(self, assignment: Dict[Variable, Any]) -> Optional[Dict[Variable, Any]]:
+        if len(assignment) == len(self.variables):
+            return assignment
 
-def _crossover(
-    first: list[int],
-    second: list[int],
-    max_steps: int,
-    rng: random.Random,
-) -> list[int]:
-    first_cut = rng.randrange(len(first) + 1)
-    second_cut = rng.randrange(len(second) + 1)
-    return (first[:first_cut] + second[second_cut:])[:max_steps]
+        self.backtrack_count += 1
+        if self.backtrack_count > self.max_backtracks:
+            return None
 
-
-def _mutate(
-    chromosome: list[int],
-    option_count: int,
-    max_steps: int,
-    rng: random.Random,
-) -> list[int]:
-    mutated = chromosome.copy()
-    operations = ["replace", "insert", "delete"]
-    if not mutated:
-        operations = ["insert"]
-
-    operation = rng.choice(operations)
-    if operation == "replace" and mutated:
-        mutated[rng.randrange(len(mutated))] = rng.randrange(option_count)
-    elif operation == "insert" and len(mutated) < max_steps:
-        position = rng.randrange(len(mutated) + 1)
-        mutated.insert(position, rng.randrange(option_count))
-    elif operation == "delete" and mutated:
-        del mutated[rng.randrange(len(mutated))]
-    return mutated[:max_steps]
-
-
-def genetic_search(
-    start_stock: int,
-    target_stock: int,
-    production_options: list[ProductionOption],
-    *,
-    population_size: int = 60,
-    generations: int = 150,
-    tournament_size: int = 3,
-    elite_count: int = 2,
-    mutation_rate: float = 0.15,
-    seed: int | None = None,
-) -> tuple[list[Decision], int] | None:
-    """Find a low-cost batch sequence with tournament selection and elitism.
-
-    Feasible chromosomes always rank ahead of infeasible chromosomes. Among
-    feasible plans, lower total production cost wins.
-    """
-    if start_stock >= target_stock:
-        return [], 0
-    if population_size < 2:
-        raise ValueError("population_size must be at least 2")
-    if generations < 0:
-        raise ValueError("generations must be non-negative")
-    if not 1 <= tournament_size <= population_size:
-        raise ValueError("tournament_size must be between 1 and population_size")
-    if not 1 <= elite_count < population_size:
-        raise ValueError("elite_count must be between 1 and population_size - 1")
-    if not 0.0 <= mutation_rate <= 1.0:
-        raise ValueError("mutation_rate must be between 0 and 1")
-    if any(option.units < 0 or option.cost < 0 for option in production_options):
-        raise ValueError("Production units and costs must be non-negative")
-    if not production_options:
+        var = self.select_unassigned_variable(assignment)
+        for value in self.domains[var]:
+            assignment[var] = value
+            if self._is_consistent(var, assignment):
+                result = self._backtrack(assignment)
+                if result is not None:
+                    return result
+            del assignment[var]
         return None
 
-    graph = build_graph(start_stock, target_stock, production_options)
-    states_that_reach_goal = _states_that_reach_goal(graph, target_stock)
-    if start_stock not in states_that_reach_goal:
-        return None
+    def _is_consistent(self, var: Variable, assignment: Dict[Variable, Any]) -> bool:
+        for c in self.constraints:
+            if var in c.scope and not c.is_satisfied(assignment):
+                return False
+        return True
 
-    max_steps = len(graph)
-    rng = random.Random(seed)
-    population = [
-        _random_feasible_chromosome(
-            start_stock,
-            target_stock,
-            production_options,
-            states_that_reach_goal,
-            max_steps,
-            rng,
-        )
-        for _ in range(population_size)
-    ]
 
-    def fitness(chromosome: list[int]) -> tuple[int, int, int]:
-        return _evaluate_chromosome(
-            chromosome,
-            start_stock,
-            target_stock,
-            production_options,
-            max_steps,
-        )[0]
+# ============================================================================
+# 3. DOMAIN OPTIMIZER (Menerjemahkan Dataset ke CSP)
+# ============================================================================
 
-    for _ in range(generations):
-        ranked_population = sorted(population, key=fitness)
-        next_population = [chromosome.copy() for chromosome in ranked_population[:elite_count]]
+class SmartBizOptimizer:
+    """Wrapper yang memetakan data dari smartbiz_json ke struktur CSP Solver."""
 
-        while len(next_population) < population_size:
-            first = min(
-                (population[index] for index in rng.sample(range(population_size), tournament_size)),
-                key=fitness,
+    def __init__(self, data_dir: str = "smartbiz_json", budget_limit: float = 500000.0):
+        self.loader = DatasetLoader(data_dir)
+        self.raw_data = self.loader.load_all_data()
+        self.budget_limit = budget_limit
+
+    def build_and_solve(self) -> Dict[str, Any]:
+        """Membangun variabel, domain, dan batasan dari dataset JSON lalu mengeksekusi solver."""
+        products = self.raw_data.get("products", [])
+        ingredients = self.raw_data.get("ingredients", [])
+        recipes = self.raw_data.get("product_recipes", [])
+        options = self.raw_data.get("production_options", [])
+
+        if not products:
+            raise UnsatisfiableConstraintError("Dataset produk kosong.")
+
+        # Opsi batch produksi dari production_options.json
+        batch_choices = [
+            opt.get("batch_size", 0) for opt in options
+        ] if options else [0, 5, 10, 15, 20]
+
+        variables: List[Variable] = []
+        domains: Dict[Variable, List[Any]] = {}
+
+        # 1. Variabel Produksi per Produk
+        prod_vars: Dict[str | int, Variable] = {}
+        for p in products:
+            p_id = p.get("id", p.get("product_id"))
+            var = Variable(name=f"prod_p{p_id}", category="production")
+            variables.append(var)
+            prod_vars[p_id] = var
+            domains[var] = list(batch_choices)
+
+        # 2. Variabel Restock per Bahan Baku
+        restock_vars: Dict[str | int, Variable] = {}
+        for ing in ingredients:
+            ing_id = ing.get("id", ing.get("ingredient_id"))
+            var = Variable(name=f"restock_i{ing_id}", category="restock")
+            variables.append(var)
+            restock_vars[ing_id] = var
+            domains[var] = [0, 5, 10, 15, 20, 25, 30]
+
+        constraints: List[Constraint] = []
+
+        # Constraint 1: Batasan Anggaran Kas (Budget Limit)
+        # Biaya total (Biaya Produksi + Biaya Restock Bahan Baku) <= Budget
+        ing_cost_map = {
+            ing.get("id", ing.get("ingredient_id")): float(ing.get("cost_per_unit", ing.get("unit_cost", 1000)))
+            for ing in ingredients
+        }
+        prod_cost_map = {
+            p.get("id", p.get("product_id")): float(p.get("production_cost", p.get("cost", 5000)))
+            for p in products
+        }
+
+        def budget_constraint(*args) -> bool:
+            # Half args are prod, half are restock
+            n_prod = len(prod_vars)
+            prod_vals = args[:n_prod]
+            restock_vals = args[n_prod:]
+
+            total_prod_cost = sum(
+                p_val * prod_cost_map.get(p_id, 5000)
+                for p_val, p_id in zip(prod_vals, prod_vars.keys())
             )
-            second = min(
-                (population[index] for index in rng.sample(range(population_size), tournament_size)),
-                key=fitness,
+            total_restock_cost = sum(
+                r_val * ing_cost_map.get(ing_id, 1000)
+                for r_val, ing_id in zip(restock_vals, restock_vars.keys())
             )
-            child = _crossover(first, second, max_steps, rng)
-            if rng.random() < mutation_rate:
-                child = _mutate(child, len(production_options), max_steps, rng)
-            next_population.append(child)
+            return (total_prod_cost + total_restock_cost) <= self.budget_limit
 
-        population = next_population
-
-    best = min(population, key=fitness)
-    _, result = _evaluate_chromosome(
-        best,
-        start_stock,
-        target_stock,
-        production_options,
-        max_steps,
-    )
-    return result
-
-
-def recommend_all(
-    data_dir: Path = DEFAULT_DATA_DIR,
-    *,
-    product_id: str | None = None,
-    population_size: int = 60,
-    generations: int = 150,
-    tournament_size: int = 3,
-    elite_count: int = 2,
-    mutation_rate: float = 0.15,
-    seed: int | None = None,
-) -> list[dict[str, object]]:
-    """Recommend production plans using the existing SmartBiz JSON tables."""
-    products = _read_table(data_dir, "products")
-    if product_id is not None:
-        products = [product for product in products if product["product_id"] == product_id]
-    option_records = _read_table(data_dir, "production_options")
-    inventory_records = _read_table(data_dir, "inventory_history")
-
-    options_by_product: dict[str, list[ProductionOption]] = defaultdict(list)
-    for record in option_records:
-        options_by_product[str(record["product_id"])].append(
-            ProductionOption(
-                units=int(record["units_produced"]),
-                cost=int(record["production_cost"]),
+        all_scope = list(prod_vars.values()) + list(restock_vars.values())
+        constraints.append(
+            Constraint(
+                scope=all_scope,
+                condition=budget_constraint,
+                description="Hard Constraint: Daily Budget Limit",
             )
         )
 
-    stock_by_product: dict[str, int] = defaultdict(int)
-    for record in inventory_records:
-        stock_by_product[str(record["product_id"])] += int(record["quantity_change"])
+        # Constraint 2: Batasan Kebutuhan Resep (Recipe Material Balance)
+        # Stok awal + Restock >= Konsumsi untuk Produksi
+        for ing in ingredients:
+            ing_id = ing.get("id", ing.get("ingredient_id"))
+            current_stock = float(ing.get("current_stock", ing.get("stock", 0)))
+            r_var = restock_vars[ing_id]
 
-    recommendations: list[dict[str, object]] = []
-    for product_index, product in enumerate(products):
-        product_id = str(product["product_id"])
-        current_stock = stock_by_product[product_id]
-        target_stock = int(product["initial_stock"])
-        product_seed = None if seed is None else seed + product_index
-        result = genetic_search(
-            current_stock,
-            target_stock,
-            options_by_product[product_id],
-            population_size=population_size,
-            generations=generations,
-            tournament_size=tournament_size,
-            elite_count=elite_count,
-            mutation_rate=mutation_rate,
-            seed=product_seed,
-        )
+            # Cari resep produk yang menggunakan bahan baku ini
+            related_p_ids = [
+                r.get("product_id") for r in recipes if r.get("ingredient_id") == ing_id
+            ]
+            related_p_vars = [prod_vars[pid] for pid in related_p_ids if pid in prod_vars]
 
-        if result is None:
-            production_units = None
-            batch_count = None
-            total_cost = None
-        else:
-            path, total_cost = result
-            production_units = sum(decision.produced_units for decision in path)
-            batch_count = len(path)
+            if related_p_vars:
+                def recipe_constraint(r_val, *p_vals, i_id=ing_id, c_stock=current_stock) -> bool:
+                    needed = 0.0
+                    for p_val, pid in zip(p_vals, related_p_ids):
+                        # Ambil kuantitas resep per unit
+                        recipe_item = next(
+                            (rec for rec in recipes if rec.get("product_id") == pid and rec.get("ingredient_id") == i_id),
+                            None,
+                        )
+                        qty = float(recipe_item.get("quantity", 1.0)) if recipe_item else 1.0
+                        needed += p_val * qty
+                    return (c_stock + r_val) >= needed
 
-        recommendations.append(
-            {
-                "product_id": product_id,
-                "product_name": str(product["product_name"]),
-                "current_stock": current_stock,
-                "target_stock": target_stock,
-                "production_units": production_units,
-                "batch_count": batch_count,
-                "total_cost": total_cost,
-            }
-        )
+                constraints.append(
+                    Constraint(
+                        scope=[r_var] + related_p_vars,
+                        condition=recipe_constraint,
+                        description=f"Hard Constraint: Recipe Balance for Ingredient {ing_id}",
+                    )
+                )
 
-    return recommendations
+        solver = CSPSolver(variables, domains, constraints)
+        raw_solution = solver.solve()
 
+        # Format output hasil rekomendasi
+        formatted_result = {"production": {}, "restock": {}}
+        product_ids_by_variable = {var: product_id for product_id, var in prod_vars.items()}
+        ingredient_ids_by_variable = {
+            var: ingredient_id for ingredient_id, var in restock_vars.items()
+        }
+        for var, val in raw_solution.items():
+            if var.category == "production":
+                p_id = product_ids_by_variable[var]
+                formatted_result["production"][p_id] = val
+            elif var.category == "restock":
+                ing_id = ingredient_ids_by_variable[var]
+                formatted_result["restock"][ing_id] = val
 
-def _rupiah(value: int) -> str:
-    return f"Rp{value:,}".replace(",", ".")
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--data-dir",
-        type=Path,
-        default=DEFAULT_DATA_DIR,
-        help="Folder berisi file JSON dataset (default: data/smartbiz_json)",
-    )
-    parser.add_argument("--product-id", help="Tampilkan rekomendasi satu produk, misalnya P001")
-    parser.add_argument("--seed", type=int, help="Seed agar hasil GA dapat direproduksi")
-    parser.add_argument("--population-size", type=int, default=60)
-    parser.add_argument("--generations", type=int, default=150)
-    parser.add_argument("--tournament-size", type=int, default=3)
-    parser.add_argument("--elite-count", type=int, default=2)
-    parser.add_argument("--mutation-rate", type=float, default=0.15)
-    args = parser.parse_args()
-
-    recommendations = recommend_all(
-        args.data_dir,
-        product_id=args.product_id,
-        population_size=args.population_size,
-        generations=args.generations,
-        tournament_size=args.tournament_size,
-        elite_count=args.elite_count,
-        mutation_rate=args.mutation_rate,
-        seed=args.seed,
-    )
-    if args.product_id and not recommendations:
-        parser.error(f"product_id tidak ditemukan: {args.product_id}")
-
-    print("ID | Produk | Stok | Target | Produksi | Batch | Biaya GA")
-    for item in recommendations:
-        cost = item["total_cost"]
-        cost_text = _rupiah(int(cost)) if cost is not None else "Tidak tersedia"
-        print(
-            f"{item['product_id']} | {item['product_name']} | "
-            f"{item['current_stock']} | {item['target_stock']} | "
-            f"{item['production_units']} | {item['batch_count']} | {cost_text}"
-        )
-
-    print(f"Produk dianalisis: {len(recommendations)}")
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+        return formatted_result

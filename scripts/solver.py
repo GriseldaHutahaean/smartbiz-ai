@@ -206,7 +206,7 @@ class SmartBizOptimizer:
         domains: Dict[Variable, List[Any]] = {}
 
         # 1. Variabel Produksi per Produk
-        prod_vars: Dict[int, Variable] = {}
+        prod_vars: Dict[str | int, Variable] = {}
         for p in products:
             p_id = p.get("id", p.get("product_id"))
             var = Variable(name=f"prod_p{p_id}", category="production")
@@ -215,7 +215,7 @@ class SmartBizOptimizer:
             domains[var] = list(batch_choices)
 
         # 2. Variabel Restock per Bahan Baku
-        restock_vars: Dict[int, Variable] = {}
+        restock_vars: Dict[str | int, Variable] = {}
         for ing in ingredients:
             ing_id = ing.get("id", ing.get("ingredient_id"))
             var = Variable(name=f"restock_i{ing_id}", category="restock")
@@ -300,12 +300,16 @@ class SmartBizOptimizer:
 
         # Format output hasil rekomendasi
         formatted_result = {"production": {}, "restock": {}}
+        product_ids_by_variable = {var: product_id for product_id, var in prod_vars.items()}
+        ingredient_ids_by_variable = {
+            var: ingredient_id for ingredient_id, var in restock_vars.items()
+        }
         for var, val in raw_solution.items():
             if var.category == "production":
-                p_id = int(var.name.replace("prod_p", ""))
+                p_id = product_ids_by_variable[var]
                 formatted_result["production"][p_id] = val
             elif var.category == "restock":
-                ing_id = int(var.name.replace("restock_i", ""))
+                ing_id = ingredient_ids_by_variable[var]
                 formatted_result["restock"][ing_id] = val
 
         return formatted_result

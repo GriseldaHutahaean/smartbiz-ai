@@ -3,7 +3,7 @@
 import pytest
 import json
 from pathlib import Path
-from solver import (
+from scripts.solver import (
     CSPSolver,
     Variable,
     Constraint,

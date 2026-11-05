@@ -197,6 +197,42 @@ Dependency project didefinisikan pada `pyproject.toml`. Saat ini dependency apli
 
 ## How to Run
 
+### Milestone 3: Vector Knowledge Base and Semantic Search
+
+The Milestone 3 pipeline is implemented in `scripts/vector_pipeline.py`. It
+reads every PDF under `data/raw/`, cleans extracted text, applies paragraph ->
+sentence -> word-aware recursive chunking, creates multilingual
+Sentence-Transformers embeddings, and stores them in a persistent ChromaDB
+collection using cosine distance.
+
+The default chunk size is **1,000 characters** with a **150-character overlap**.
+This keeps most short business-procedure paragraphs together while limiting
+embedding payload size; the overlap preserves context across boundaries without
+duplicating too much text. The values are recorded in the ingestion summary and
+can be changed at the constants in the pipeline after a measured evaluation.
+
+Run the complete pipeline from the repository root:
+
+```bash
+uv sync
+uv run python scripts/vector_pipeline.py all --reset
+```
+
+Individual stages are also available:
+
+```bash
+uv run python scripts/vector_pipeline.py ingest
+uv run python scripts/vector_pipeline.py index
+uv run python scripts/vector_pipeline.py benchmark --top-k 5
+```
+
+Generated data is placed under `data/processed/vector_search/`. The persistent
+ChromaDB directory is ignored by Git so the database remains on disk locally
+without adding a large binary index to the repository. Benchmark outputs are
+written to `docs/benchmark/`, including CSV, JSON, Markdown analysis, and a PNG
+plot. The benchmark uses actual retrieval scores; it does not contain fabricated
+results.
+
 Baseline UCS untuk keputusan produksi tersedia pada `scripts/ucs_production.py`. Modul ini hanya menangani alur persediaan berikut:
 
 ```text

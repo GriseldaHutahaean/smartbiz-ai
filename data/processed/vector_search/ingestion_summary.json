@@ -1,0 +1,84 @@
+{
+  "documents": 15,
+  "chunks": 1049,
+  "chunk_size": 1000,
+  "chunk_overlap": 150,
+  "strategy": "paragraph -> sentence -> word-aware recursive splitting with trailing overlap",
+  "documents_detail": [
+    {
+      "source_file": "3 Pedoman Teknis Perdagangan.pdf",
+      "characters": 56461,
+      "chunks": 75
+    },
+    {
+      "source_file": "5 Pedoman Teknis Pertanian.pdf",
+      "characters": 55461,
+      "chunks": 74
+    },
+    {
+      "source_file": "67 Buku 4 Manajemen Usaha Kecil.pdf",
+      "characters": 123504,
+      "chunks": 159
+    },
+    {
+      "source_file": "7 Pedoman Umum Perorangan.pdf",
+      "characters": 26884,
+      "chunks": 38
+    },
+    {
+      "source_file": "Buku Juknis SIAPIK Web Sektor Perdagangan.pdf",
+      "characters": 219380,
+      "chunks": 283
+    },
+    {
+      "source_file": "E-Book_Pedoman_SIAPIK.pdf",
+      "characters": 134327,
+      "chunks": 182
+    },
+    {
+      "source_file": "J+10.pdf",
+      "characters": 16515,
+      "chunks": 22
+    },
+    {
+      "source_file": "Pedoman Teknis Manufaktur.pdf",
+      "characters": 56524,
+      "chunks": 76
+    },
+    {
+      "source_file": "Pelatihan HPP dan Harga Jual untuk Koperasi UKM Kuliner (BRIN).pdf",
+      "characters": 19833,
+      "chunks": 27
+    },
+    {
+      "source_file": "Pengumuman_Modul_Pengantar_Manajemen_Rantai_Pasok.pdf",
+      "characters": 55245,
+      "chunks": 72
+    },
+    {
+      "source_file": "SOP-11_Pengadaan-Barang-dan-atau-Jasa-BUMDes.pdf",
+      "characters": 6347,
+      "chunks": 8
+    },
+    {
+      "source_file": "SOP-13_Pengelolaan-Stok-dan-Persediaan-BUMDes.pdf",
+      "characters": 5564,
+      "chunks": 8
+    },
+    {
+      "source_file": "SOP-15_Pencatatan-Keuangan-dan-Tutup-Buku-Bulanan-BUMDes.pdf",
+      "characters": 5777,
+      "chunks": 8
+    },
+    {
+      "source_file": "sop-penerimaan-dan-penyimpanan-bahan-baku.pdf",
+      "characters": 5860,
+      "chunks": 8
+    },
+    {
+      "source_file": "sop-seleksi-dan-evaluasi-vendor (1).pdf",
+      "characters": 6465,
+      "chunks": 9
+    }
+  ]
+}

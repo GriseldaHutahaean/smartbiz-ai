@@ -1,4 +1,6 @@
 __pycache__/
+.pytest_cache/
+data/processed/vector_search/chroma_db/
 *.py[cod]
 *.so
 .Python

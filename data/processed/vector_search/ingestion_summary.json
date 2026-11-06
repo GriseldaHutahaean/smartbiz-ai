@@ -1,58 +1,58 @@
 {
   "documents": 15,
-  "chunks": 1049,
+  "chunks": 1045,
   "chunk_size": 1000,
   "chunk_overlap": 150,
   "strategy": "paragraph -> sentence -> word-aware recursive splitting with trailing overlap",
   "documents_detail": [
     {
       "source_file": "3 Pedoman Teknis Perdagangan.pdf",
-      "characters": 56461,
-      "chunks": 75
+      "characters": 56148,
+      "chunks": 74
     },
     {
       "source_file": "5 Pedoman Teknis Pertanian.pdf",
-      "characters": 55461,
+      "characters": 55148,
       "chunks": 74
     },
     {
       "source_file": "67 Buku 4 Manajemen Usaha Kecil.pdf",
-      "characters": 123504,
+      "characters": 123361,
       "chunks": 159
     },
     {
       "source_file": "7 Pedoman Umum Perorangan.pdf",
-      "characters": 26884,
-      "chunks": 38
+      "characters": 26773,
+      "chunks": 37
     },
     {
       "source_file": "Buku Juknis SIAPIK Web Sektor Perdagangan.pdf",
-      "characters": 219380,
-      "chunks": 283
+      "characters": 219210,
+      "chunks": 282
     },
     {
       "source_file": "E-Book_Pedoman_SIAPIK.pdf",
-      "characters": 134327,
+      "characters": 134222,
       "chunks": 182
     },
     {
       "source_file": "J+10.pdf",
-      "characters": 16515,
+      "characters": 16501,
       "chunks": 22
     },
     {
       "source_file": "Pedoman Teknis Manufaktur.pdf",
-      "characters": 56524,
+      "characters": 56214,
       "chunks": 76
     },
     {
       "source_file": "Pelatihan HPP dan Harga Jual untuk Koperasi UKM Kuliner (BRIN).pdf",
-      "characters": 19833,
-      "chunks": 27
+      "characters": 19831,
+      "chunks": 26
     },
     {
       "source_file": "Pengumuman_Modul_Pengantar_Manajemen_Rantai_Pasok.pdf",
-      "characters": 55245,
+      "characters": 55239,
       "chunks": 72
     },
     {

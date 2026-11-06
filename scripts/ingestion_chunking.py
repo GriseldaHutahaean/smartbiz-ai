@@ -29,5 +29,7 @@ def process_all_documents(raw_folder_path: str) -> list[dict]:
 if __name__ == "__main__":
     project_root = Path(__file__).resolve().parents[1]
     chunks = process_all_documents(str(project_root / "data" / "raw"))
-    print(f"Processed {len({chunk['source_file'] for chunk in chunks})} PDFs into {len(chunks)} chunks.")
+    print(
+        f"Processed {len({chunk['source_file'] for chunk in chunks})} PDFs into {len(chunks)} chunks."
+    )
     print(f"Parameters: chunk_size={CHUNK_SIZE}, overlap={CHUNK_OVERLAP}")
